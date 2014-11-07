@@ -9,8 +9,11 @@
 
 
 (defn add-to-log-recs [str]
-  )
+  (prn ">>>>" str))
 
 (defn read-file [fname]
   (with-open [rdr (clojure.java.io/reader fname)]
     (doall (map add-to-log-recs (line-seq rdr)))))
+
+(defn ttt []
+  (read-file testlog1))
