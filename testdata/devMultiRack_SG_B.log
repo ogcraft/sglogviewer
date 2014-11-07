@@ -1,0 +1,1317 @@
+2014-Nov-06 12:41:30.024024 [General] [TRACE] ring_db_type::send_ctrl_msg():STOP m_state: 0
+2014-Nov-06 12:41:30.039025 [General] [BUG] ring_db_type::send_ctrl_msg():STOP Failed Error: Connection refused
+2014-Nov-06 12:41:30.039025 [] [TRACE] CAGHandler::Init
+2014-Nov-06 12:41:30.049025 [General] [TRACE] rnr_api:setup masters
+2014-Nov-06 12:41:30.049025 [General] [TRACE] EVENT:	RESUME
+2014-Nov-06 12:41:30.049025 [General] [TRACE] iologger: (initialization): C:/p4client\ProAudio\dev_amitb_main\ProAudio\Products\Debug\Apps\IOSharingB\iologger.xml: cannot open file
+2014-Nov-06 12:41:30.049025 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:30.049025 [General] [TRACE] CAGHandler::Init(): MASTER AFFINITY SET: 1
+2014-Nov-06 12:41:30.049025 [General] [TRACE] update_some_user_data. data_version [3452816845].
+2014-Nov-06 12:41:30.049025 [General] [TRACE] update_internal_is_suspended[0]. (user_area)
+2014-Nov-06 12:41:30.049025 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:30.049025 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:30.054025 [General] [TRACE] Amitb start of update_user_space_internal() - !m_is_db_up
+2014-Nov-06 12:41:30.054025 [General] [TRACE] rnr call: set_offload_role
+2014-Nov-06 12:41:30.054025 [General] [TRACE] rnr call: set_offload_role
+2014-Nov-06 12:41:30.054025 [General] [TRACE] rnr call: get_self_mac
+2014-Nov-06 12:41:30.054025 [General] [TRACE] SSh: resume with local mac 00:0e:0c:63:33:1e
+2014-Nov-06 12:41:30.054025 [General] [TRACE] ring_db_type::start(fe80::20e:cff:fe63:331e%14, 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:)
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_server_type::run()
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_type::start_db_client_and_server()
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_type::start_db_client
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_type::connect_client_signals
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_client_type::start() called with ipv6_address: fe80::20e:cff:fe63:331e%14 uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_client_type::start() started new client_io_thread
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_type::start_db_server m_state = STATE_START
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_type::connect_server_signals
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_client_type::run()
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_server_type::start(fe80::20e:cff:fe63:331e%14)
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_server_type::start() started new server_io_thread
+2014-Nov-06 12:41:30.059025 [General] [TRACE] ring_db_server_type::run(fe80::20e:cff:fe63:331e%14)
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::send_ctrl_msg():DB_SERVER_CONNECTED m_state: 2
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::poll(): rc: 1 m_state: 2
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::poll received DB_SERVER_CONNECTED
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::on_server_m_state = STATE_CONNECTED m_discovery->start(fe80::20e:cff:fe63:331e%14,67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:, port_pub=4001, port_rep=4000)
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::start_discovery
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::connect_discovery_signals
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_discovery_imp_type::start(fe80::20e:cff:fe63:331e%14) called
+2014-Nov-06 12:41:30.064025 [General] [TRACE] =============== ds_init =================
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_discovery_net_type::entering_state ds_init data=null
+2014-Nov-06 12:41:30.064025 [General] [TRACE] ring_db_type::send_ctrl_msg():DISCOVERY_STATE_CHANGED m_state: 3
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::poll(): rc: 1 m_state: 3
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::poll received DISCOVERY_STATE_CHANGED
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::on_discovery_state_changed ds_unkwnown -> ds_init ()
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_server_type::disable()
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_server_type::send_ctrl_msg():DISABLE
+2014-Nov-06 12:41:30.069025 [General] [TRACE] =============== ds_no_master =================
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_discovery_net_type::entering_state ds_no_master data=null
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::send_ctrl_msg():DISCOVERY_STATE_CHANGED m_state: 3
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_client_type::unsubscribe_for_notification()
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_client_type::send_ctrl_msg():UNSUBSCRIBE
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_client_type::handler_control_msg(): Received UNSUBSCRIBE
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_client_type::handler_unsubscribe_for_notification()
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::poll(): rc: 1 m_state: 3
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::poll received DISCOVERY_STATE_CHANGED
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_type::on_discovery_state_changed ds_init -> ds_no_master ()
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_server_type::disable()
+2014-Nov-06 12:41:30.069025 [General] [TRACE] ring_db_server_type::send_ctrl_msg():DISABLE
+2014-Nov-06 12:41:30.074025 [General] [TRACE] ring_db_client_type::unsubscribe_for_notification()
+2014-Nov-06 12:41:30.074025 [General] [TRACE] ring_db_client_type::send_ctrl_msg():UNSUBSCRIBE
+2014-Nov-06 12:41:30.074025 [General] [TRACE] ring_db_client_type::handler_control_msg(): Received UNSUBSCRIBE
+2014-Nov-06 12:41:30.074025 [General] [TRACE] ring_db_client_type::handler_unsubscribe_for_notification()
+2014-Nov-06 12:41:30.139027 [General] [TRACE] RnR_Clock_type::clock_setup():  sample rate: 0 is_SoE: 1 clock_master: 00:1c:d1:00:65:48
+2014-Nov-06 12:41:30.139027 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:30.139027 [General] [TRACE] update_some_user_data. data_version [3452816845].
+2014-Nov-06 12:41:30.139027 [General] [TRACE] update_internal_soe_master. (user_area)
+2014-Nov-06 12:41:30.139027 [General] [TRACE] trying to set_clock_source_follow_mode, but couldn't get IOModule for 00:1c:d1:00:65:48
+2014-Nov-06 12:41:30.139027 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:30.139027 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:30.139027 [General] [TRACE] Amitb start of update_user_space_internal() - !m_is_db_up
+2014-Nov-06 12:41:30.139027 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:30.139027 [General] [TRACE] RnR_API::set_connections(): number: 4
+2014-Nov-06 12:41:30.139027 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:30.139027 [General] [TRACE] update_some_user_data. data_version [3452816845].
+2014-Nov-06 12:41:30.144027 [General] [TRACE] update_internal_req_connections. (user_area)
+2014-Nov-06 12:41:30.144027 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:30.144027 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:30.144027 [General] [TRACE] Amitb start of update_user_space_internal() - !m_is_db_up
+2014-Nov-06 12:41:30.249029 [General] [TRACE] DEVICE UP 00:1b:21:29:b0:50
+2014-Nov-06 12:41:30.249029 [General] [TRACE] DEVICE UP 00:1c:d1:00:65:48
+2014-Nov-06 12:41:30.249029 [General] [TRACE] DEVICE UP 00:1c:d1:00:68:a7
+2014-Nov-06 12:41:30.524034 [General] [TRACE] =============== ds_ring_master =================
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_discovery_net_type::entering_state ds_ring_master data=(uuid: [67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:] mac [00:0e:0c:63:33:1e]
+|master_affinity_normal|67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:|00:0e:0c:63:33:1e|fe80::20e:cff:fe63:331e|4001|4000)
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_type::send_ctrl_msg():DISCOVERY_STATE_CHANGED m_state: 3
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_type::poll(): rc: 1 m_state: 3
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_type::poll received DISCOVERY_STATE_CHANGED
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_type::on_discovery_state_changed ds_no_master -> ds_ring_master (uuid: [67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:] mac [00:0e:0c:63:33:1e]
+|master_affinity_normal|67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:|00:0e:0c:63:33:1e|fe80::20e:cff:fe63:331e|4001|4000)
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_server_type::enable()
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_server_type::send_ctrl_msg():ENABLE
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_client_type::subscribe_for_notification() fe80::20e:cff:fe63:331e:4000:4001
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_client_type::send_ctrl_msg():SUBSCRIBE
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_client_type::handler_control_msg(): Received SUBSCRIBE
+2014-Nov-06 12:41:30.524034 [General] [TRACE] ring_db_client_type::handler_subscribe_for_notification(): fe80::20e:cff:fe63:331e%14:4000:4001
+2014-Nov-06 12:41:30.529034 [General] [TRACE] ring_db_client_type::handler_subscribe_for_notification(): zmq_url: tcp://fe80::20e:cff:fe63:331e%14:4001
+2014-Nov-06 12:41:30.529034 [General] [TRACE] ring_db_client_type::connect_to_master(): conecting to req: fe80::20e:cff:fe63:331e%14:4000
+2014-Nov-06 12:41:30.529034 [General] [TRACE] @@@@@@@@@@@@@@@   rnr_ring_db_sgring_type::on_db_up() lock m_mutex
+2014-Nov-06 12:41:30.529034 [General] [TRACE] OGG rnr_ring_db_sgring_type::on_db_up() my uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:
+2014-Nov-06 12:41:30.529034 [General] [TRACE] OGG rnr_ring_db_sgring_type::on_db_up(): my part size: 1 other uuids size: 1 full size: 1 map size: 1
+2014-Nov-06 12:41:30.529034 [General] [TRACE] OGG  rnr_ring_db_sgring_type::update_all_host_data_internal(): uuids: 1[67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:,]
+2014-Nov-06 12:41:30.529034 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_ALL_HOST_DATA
+2014-Nov-06 12:41:30.529034 [General] [TRACE] rnr_ring_db_sgring_type::update_all_host_data_internal() result: OK
+2014-Nov-06 12:41:30.529034 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:30.529034 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:30.529034 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_ALL_HOST_DATA
+2014-Nov-06 12:41:30.534034 [General] [TRACE] ****** Incrementing Version from 0 -> 1
+2014-Nov-06 12:41:30.534034 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:30.534034 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:30.534034 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 1
+2014-Nov-06 12:41:30.534034 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 1 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:30.534034 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:30.534034 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [1] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:30.534034 [General] [TRACE] safe_update_local_db_info current_data_version: 3452816845 ver: 1
+2014-Nov-06 12:41:30.534034 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:30.539035 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:30.539035 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:30.649037 [General] [TRACE] EVENT:	UP	sgs	00:1b:21:29:b0:50	NONE
+2014-Nov-06 12:41:30.649037 [General] [TRACE] EVENT:	SGS_STATE	device	00:1b:21:29:b0:50	free
+2014-Nov-06 12:41:30.654037 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] set_iobox_up
+2014-Nov-06 12:41:30.654037 [General] [TRACE] EVENT:	UP	iobox	00:1c:d1:00:65:48	NONE
+2014-Nov-06 12:41:30.659037 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] set_iobox_up
+2014-Nov-06 12:41:30.659037 [General] [TRACE] EVENT:	UP	iobox	00:1c:d1:00:68:a7	NONE
+2014-Nov-06 12:41:31.429052 [General] [WARN] set_iom_chunk - while not the IOBox owner.
+2014-Nov-06 12:41:31.429052 [General] [WARN] set_iom_chunk - while not the IOBox owner.
+2014-Nov-06 12:41:32.422073 [General] [WARN] set_iom_chunk - while not the IOBox owner.
+2014-Nov-06 12:41:32.427073 [General] [WARN] set_iom_chunk - while not the IOBox owner.
+2014-Nov-06 12:41:36.065153 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] set_iobox_down
+2014-Nov-06 12:41:36.065153 [General] [TRACE] EVENT:	DOWN	iobox	00:1c:d1:00:68:a7
+2014-Nov-06 12:41:36.065153 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.466162 [General] [TRACE] cam_master_type::node_up: m_mac_que.push( 00:1c:d1:00:68:a7 )
+2014-Nov-06 12:41:36.466162 [General] [TRACE] cam_master_type::send_trigger, sending cam_trigger_cmd_msg_type to:00:1c:d1:00:68:a7
+2014-Nov-06 12:41:36.666166 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] set_iobox_up
+2014-Nov-06 12:41:36.666166 [General] [TRACE] EVENT:	UP	iobox	00:1c:d1:00:68:a7	ME
+2014-Nov-06 12:41:36.666166 [General] [TRACE] ********** CONFIGURATION CHANGED mac: 00:1c:d1:00:68:a7 0 -> 26e04b86 bundles: 0 *************
+2014-Nov-06 12:41:36.666166 [General] [TRACE] rnr call: set_soe_master
+2014-Nov-06 12:41:36.666166 [General] [TRACE] OG iobox_master2_type::set_soe_master():  mac: 00:1c:d1:00:68:a7 soe_master: 00:1c:d1:00:65:48 old clock_master: ff:ff:ff:ff:ff:ff
+2014-Nov-06 12:41:36.666166 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::start_configuration_data_collection(): mac: 00:1c:d1:00:68:a7 0 -> 26e04b86 start_bundle_h: 0 bundles: 1
+2014-Nov-06 12:41:36.666166 [General] [TRACE] called IOM set_soe_master_mac for device 00:1c:d1:00:68:a7 with master 00:1c:d1:00:65:48
+2014-Nov-06 12:41:36.666166 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.666166 [General] [TRACE] update_some_user_data. data_version [1].
+2014-Nov-06 12:41:36.666166 [General] [TRACE] update_internal_gender. (user_area)
+2014-Nov-06 12:41:36.666166 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:36.666166 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:36.666166 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.666166 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:36.666166 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.671167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.671167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.671167 [General] [TRACE] ****** Incrementing Version from 1 -> 2
+2014-Nov-06 12:41:36.671167 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:36.671167 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:36.671167 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 2
+2014-Nov-06 12:41:36.671167 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 2 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:36.671167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.676167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [2] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.676167 [General] [TRACE] safe_update_local_db_info current_data_version: 1 ver: 2
+2014-Nov-06 12:41:36.676167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.676167 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.676167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.676167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.676167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [2] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.681167 [General] [TRACE] safe_update_local_db_info current_data_version: 2 ver: 2
+2014-Nov-06 12:41:36.681167 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:36.681167 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:36.681167 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.681167 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:36.681167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.681167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.681167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.681167 [General] [TRACE] ****** Incrementing Version from 2 -> 3
+2014-Nov-06 12:41:36.686167 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:36.686167 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:36.686167 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 3
+2014-Nov-06 12:41:36.686167 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 3 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:36.686167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.686167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [3] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.691167 [General] [TRACE] safe_update_local_db_info current_data_version: 2 ver: 3
+2014-Nov-06 12:41:36.691167 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.691167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.691167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.691167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.691167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [3] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.696167 [General] [TRACE] safe_update_local_db_info current_data_version: 3 ver: 3
+2014-Nov-06 12:41:36.696167 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:36.696167 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:36.696167 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] callback for set clocks: soe_master_mac: [00:1c:d1:00:65:48].  SR: [48000]. IOMclock_source: [3]. minor_cs: [1]. cs_follow_mode: [0].
+2014-Nov-06 12:41:36.696167 [General] [TRACE] OG AG_IOModulesImp::send_sample_rate_and_clocks():  mac: 00:1c:d1:00:68:a7 sample_rate: bb80 clock_source: 3
+2014-Nov-06 12:41:36.696167 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.696167 [General] [TRACE] clock setup for device 00:1c:d1:00:68:a7 master clock 00:1c:d1:00:65:48 major clock source 3 minor clock source 1 sample rate 48000 follow clock source mode: 0
+2014-Nov-06 12:41:36.696167 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:36.696167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.696167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.696167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.696167 [General] [TRACE] ****** Incrementing Version from 3 -> 4
+2014-Nov-06 12:41:36.701167 [General] [TRACE] received a frame with opcode 8211 which isn't registered
+2014-Nov-06 12:41:36.701167 [General] [TRACE] src node 00:1c:d1:00:68:a7(iobox)dst node 00:0e:0c:63:33:1e(iobox master)
+2014-Nov-06 12:41:36.701167 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:36.701167 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:36.701167 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 4
+2014-Nov-06 12:41:36.701167 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 4 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:36.701167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.706167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [4] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.706167 [General] [TRACE] safe_update_local_db_info current_data_version: 3 ver: 4
+2014-Nov-06 12:41:36.706167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.706167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.706167 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.706167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.711167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [4] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.711167 [General] [TRACE] safe_update_local_db_info current_data_version: 4 ver: 4
+2014-Nov-06 12:41:36.711167 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:36.711167 [General] [TRACE] update_some_user_data. data_version [4].
+2014-Nov-06 12:41:36.711167 [General] [TRACE] update_internal_orphan. (user_area)
+2014-Nov-06 12:41:36.711167 [General] [TRACE] update_some_user_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:36.711167 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.711167 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.711167 [General] [TRACE] update_some_user_data. data_version [4].
+2014-Nov-06 12:41:36.711167 [General] [TRACE] update_internal_limits. (user_area)
+2014-Nov-06 12:41:36.711167 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:36.711167 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:36.716167 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.716167 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:36.716167 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.716167 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.716167 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.716167 [General] [TRACE] ****** Incrementing Version from 4 -> 5
+2014-Nov-06 12:41:36.721168 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:36.721168 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:36.721168 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 5
+2014-Nov-06 12:41:36.721168 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 5 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:36.721168 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.721168 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [5] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.726168 [General] [TRACE] safe_update_local_db_info current_data_version: 4 ver: 5
+2014-Nov-06 12:41:36.726168 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.726168 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.726168 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.726168 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.726168 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [5] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.731168 [General] [TRACE] safe_update_local_db_info current_data_version: 5 ver: 5
+2014-Nov-06 12:41:36.731168 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:36.731168 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:36.731168 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.731168 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.731168 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.866170 [General] [TRACE] EVENT:	DOWN	iobox	00:1c:d1:00:65:48
+2014-Nov-06 12:41:36.866170 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] set_iobox_down
+2014-Nov-06 12:41:36.866170 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.866170 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.866170 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.866170 [General] [TRACE] update_some_user_data. data_version [5].
+2014-Nov-06 12:41:36.866170 [General] [TRACE] update_internal_clock. (user_area)
+2014-Nov-06 12:41:36.866170 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:36.866170 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:36.866170 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.871171 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:36.871171 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.871171 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:36.871171 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.871171 [General] [TRACE] ****** Incrementing Version from 5 -> 6
+2014-Nov-06 12:41:36.871171 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:36.871171 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:36.871171 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 6
+2014-Nov-06 12:41:36.871171 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 6 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:36.876171 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.876171 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [6] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.876171 [General] [TRACE] safe_update_local_db_info current_data_version: 5 ver: 6
+2014-Nov-06 12:41:36.876171 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:36.876171 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:36.881171 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:36.881171 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [6] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:36.881171 [General] [TRACE] safe_update_local_db_info current_data_version: 6 ver: 6
+2014-Nov-06 12:41:36.881171 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:36.881171 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:36.881171 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:37.270180 [General] [TRACE] cam_master_type::node_up: m_mac_que.push( 00:1c:d1:00:65:48 )
+2014-Nov-06 12:41:37.270180 [General] [TRACE] cam_master_type::send_trigger, sending cam_trigger_cmd_msg_type to:00:1c:d1:00:65:48
+2014-Nov-06 12:41:37.470184 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] set_iobox_up
+2014-Nov-06 12:41:37.470184 [General] [TRACE] EVENT:	UP	iobox	00:1c:d1:00:65:48	ME
+2014-Nov-06 12:41:37.470184 [General] [TRACE] rnr call: set_soe_master
+2014-Nov-06 12:41:37.470184 [General] [TRACE] OG iobox_master2_type::set_soe_master():  mac: 00:1c:d1:00:65:48 soe_master: 00:1c:d1:00:65:48 old clock_master: 00:1c:d1:00:65:48
+2014-Nov-06 12:41:37.470184 [General] [TRACE] ********** CONFIGURATION CHANGED mac: 00:1c:d1:00:65:48 0 -> 26e04b86 bundles: 0 *************
+2014-Nov-06 12:41:37.470184 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::start_configuration_data_collection(): mac: 00:1c:d1:00:65:48 0 -> 26e04b86 start_bundle_h: 0 bundles: 0
+2014-Nov-06 12:41:37.470184 [General] [TRACE] called IOM set_soe_master_mac for device 00:1c:d1:00:65:48 with master 00:1c:d1:00:65:48
+2014-Nov-06 12:41:37.470184 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.470184 [General] [TRACE] update_some_user_data. data_version [6].
+2014-Nov-06 12:41:37.470184 [General] [TRACE] update_internal_gender. (user_area)
+2014-Nov-06 12:41:37.470184 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:37.470184 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.470184 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.475185 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.475185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.475185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.475185 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.475185 [General] [TRACE] ****** Incrementing Version from 6 -> 7
+2014-Nov-06 12:41:37.475185 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.475185 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.475185 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 7
+2014-Nov-06 12:41:37.480185 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 7 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.480185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.480185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [7] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.480185 [General] [TRACE] safe_update_local_db_info current_data_version: 6 ver: 7
+2014-Nov-06 12:41:37.480185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.480185 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.480185 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.480185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.485185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [7] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.485185 [General] [TRACE] safe_update_local_db_info current_data_version: 7 ver: 7
+2014-Nov-06 12:41:37.485185 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.485185 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.490185 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.490185 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] callback for set clocks: soe_master_mac: [00:1c:d1:00:65:48].  SR: [48000]. IOMclock_source: [0]. minor_cs: [1]. cs_follow_mode: [0].
+2014-Nov-06 12:41:37.490185 [General] [TRACE] OG AG_IOModulesImp::send_sample_rate_and_clocks():  mac: 00:1c:d1:00:65:48 sample_rate: bb80 clock_source: 0
+2014-Nov-06 12:41:37.490185 [General] [TRACE] clock setup for device 00:1c:d1:00:65:48 master clock 00:1c:d1:00:65:48 major clock source 2 minor clock source 1 sample rate 48000 follow clock source mode: 0
+2014-Nov-06 12:41:37.490185 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.490185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.490185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.490185 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.490185 [General] [TRACE] ****** Incrementing Version from 7 -> 8
+2014-Nov-06 12:41:37.495185 [General] [TRACE] received a frame with opcode 8211 which isn't registered
+2014-Nov-06 12:41:37.495185 [General] [TRACE] src node 00:1c:d1:00:65:48(iobox)dst node 00:0e:0c:63:33:1e(iobox master)
+2014-Nov-06 12:41:37.495185 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.495185 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.495185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.495185 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 8
+2014-Nov-06 12:41:37.495185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [8] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.495185 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 8 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.500185 [General] [TRACE] safe_update_local_db_info current_data_version: 7 ver: 8
+2014-Nov-06 12:41:37.500185 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.500185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.500185 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.500185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.505185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [8] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.505185 [General] [TRACE] safe_update_local_db_info current_data_version: 8 ver: 8
+2014-Nov-06 12:41:37.505185 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.505185 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.505185 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.510185 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.510185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.510185 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.510185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.510185 [General] [TRACE] ****** Incrementing Version from 8 -> 9
+2014-Nov-06 12:41:37.510185 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.515185 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.515185 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 9
+2014-Nov-06 12:41:37.515185 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 9 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.515185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.515185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [9] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.520185 [General] [TRACE] safe_update_local_db_info current_data_version: 8 ver: 9
+2014-Nov-06 12:41:37.520185 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.520185 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.520185 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.520185 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.525186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [9] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.525186 [General] [TRACE] safe_update_local_db_info current_data_version: 9 ver: 9
+2014-Nov-06 12:41:37.525186 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.525186 [General] [TRACE] update_some_user_data. data_version [9].
+2014-Nov-06 12:41:37.525186 [General] [TRACE] update_internal_orphan. (user_area)
+2014-Nov-06 12:41:37.525186 [General] [TRACE] update_some_user_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:37.525186 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_up took 55002 microseconds to process
+2014-Nov-06 12:41:37.525186 [General] [TRACE] event RnR_EventsManager_type::rnr_audio_desc delayed in Q: 55002
+2014-Nov-06 12:41:37.530186 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.530186 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.530186 [General] [TRACE] update_some_user_data. data_version [9].
+2014-Nov-06 12:41:37.530186 [General] [TRACE] update_internal_limits. (user_area)
+2014-Nov-06 12:41:37.530186 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:37.530186 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.530186 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.530186 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.530186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.530186 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.530186 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.535186 [General] [TRACE] ****** Incrementing Version from 9 -> 10
+2014-Nov-06 12:41:37.535186 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.535186 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.535186 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 10
+2014-Nov-06 12:41:37.535186 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 10 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.535186 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.540186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [10] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.540186 [General] [TRACE] safe_update_local_db_info current_data_version: 9 ver: 10
+2014-Nov-06 12:41:37.540186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.540186 [General] [TRACE] event RnR_EventsManager_type::rnr_db_state_changed delayed in Q: 55001
+2014-Nov-06 12:41:37.540186 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.545186 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.545186 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.545186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [10] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:1
+2014-Nov-06 12:41:37.550186 [General] [TRACE] safe_update_local_db_info current_data_version: 10 ver: 10
+2014-Nov-06 12:41:37.550186 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.550186 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:37.550186 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:37.550186 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:37.550186 [General] [TRACE] No ioboxs master was found. setting Sample Rate to 0.
+2014-Nov-06 12:41:37.550186 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:37.550186 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:37.550186 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:37.550186 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:37.550186 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:37.550186 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:37.550186 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:37.555186 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:37.555186 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:37.555186 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:37.555186 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.555186 [General] [TRACE] update_some_master_data. data_version [10].
+2014-Nov-06 12:41:37.555186 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:37.555186 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:37.555186 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.555186 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:37.555186 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.555186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.555186 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.555186 [General] [TRACE] ****** Incrementing Version from 10 -> 11
+2014-Nov-06 12:41:37.560186 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.560186 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.560186 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 11
+2014-Nov-06 12:41:37.560186 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 11 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.560186 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.565186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [11] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.565186 [General] [TRACE] safe_update_local_db_info current_data_version: 10 ver: 11
+2014-Nov-06 12:41:37.565186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.565186 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.565186 [General] [TRACE] event RnR_EventsManager_type::rnr_db_state_changed delayed in Q: 60001
+2014-Nov-06 12:41:37.565186 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.565186 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.570186 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [11] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.570186 [General] [TRACE] safe_update_local_db_info current_data_version: 11 ver: 11
+2014-Nov-06 12:41:37.570186 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.570186 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.575187 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:37.575187 [General] [TRACE] SwitchBug: do_master_data_changed_logic: notify_compilation_modified - should_notify_compilation_modified, did not find in replication. data_version [11]
+2014-Nov-06 12:41:37.575187 [General] [TRACE] event RnR_EventsManager_type::rnr_db_state_changed delayed in Q: 50001
+2014-Nov-06 12:41:37.575187 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.575187 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.575187 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.575187 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.580187 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.580187 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.640188 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.640188 [General] [TRACE] update_some_master_data. data_version [11].
+2014-Nov-06 12:41:37.640188 [General] [TRACE] update_internal_iom_chunk. (master_area)
+2014-Nov-06 12:41:37.640188 [General] [TRACE] update_some_master_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:37.670188 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.670188 [General] [TRACE] OG iobox_master2_type::handle_pending_sync_requests(): Sync Request send to 00:1c:d1:00:68:a7
+2014-Nov-06 12:41:37.670188 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.670188 [General] [TRACE] update_some_user_data. data_version [11].
+2014-Nov-06 12:41:37.670188 [General] [TRACE] update_internal_clock. (user_area)
+2014-Nov-06 12:41:37.670188 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:37.670188 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.670188 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.675189 [General] [TRACE] received a frame with opcode 8217 which isn't registered
+2014-Nov-06 12:41:37.675189 [General] [TRACE] src node 00:1c:d1:00:68:a7(iobox)dst node 00:0e:0c:63:33:1e(iobox master)
+2014-Nov-06 12:41:37.675189 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.675189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.675189 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.675189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.675189 [General] [TRACE] ****** Incrementing Version from 11 -> 12
+2014-Nov-06 12:41:37.680189 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.680189 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.680189 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 12
+2014-Nov-06 12:41:37.680189 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 12 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.680189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.680189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [12] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.685189 [General] [TRACE] safe_update_local_db_info current_data_version: 11 ver: 12
+2014-Nov-06 12:41:37.685189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.685189 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.685189 [General] [TRACE] EVENT:	SAMPLE_RATE	48000
+2014-Nov-06 12:41:37.685189 [General] [TRACE] EVENT:	SYNC	device	00:1c:d1:00:65:48
+2014-Nov-06 12:41:37.685189 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.685189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.690189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [12] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.690189 [General] [TRACE] safe_update_local_db_info current_data_version: 12 ver: 12
+2014-Nov-06 12:41:37.690189 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.690189 [General] [TRACE] update_some_user_data. data_version [12].
+2014-Nov-06 12:41:37.690189 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:41:37.690189 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:37.690189 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.695189 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.695189 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.695189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.695189 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.695189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.695189 [General] [TRACE] ****** Incrementing Version from 12 -> 13
+2014-Nov-06 12:41:37.700189 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.700189 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.700189 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 13
+2014-Nov-06 12:41:37.700189 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 13 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.700189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.700189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [13] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.705189 [General] [TRACE] safe_update_local_db_info current_data_version: 12 ver: 13
+2014-Nov-06 12:41:37.705189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.705189 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.705189 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.705189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.710189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [13] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.710189 [General] [TRACE] safe_update_local_db_info current_data_version: 13 ver: 13
+2014-Nov-06 12:41:37.710189 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.710189 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.715189 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:37.715189 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:37.715189 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:37.715189 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:37.715189 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:37.715189 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:37.715189 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:37.715189 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:37.715189 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:37.715189 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:37.715189 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:37.715189 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:37.715189 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:37.715189 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:37.715189 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.715189 [General] [TRACE] update_some_master_data. data_version [13].
+2014-Nov-06 12:41:37.715189 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:37.715189 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:37.715189 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.720189 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:37.720189 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.720189 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.720189 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.720189 [General] [TRACE] ****** Incrementing Version from 13 -> 14
+2014-Nov-06 12:41:37.720189 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.720189 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.720189 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 14
+2014-Nov-06 12:41:37.720189 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 14 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.725190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.725190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [14] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.730190 [General] [TRACE] safe_update_local_db_info current_data_version: 13 ver: 14
+2014-Nov-06 12:41:37.730190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.730190 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.730190 [General] [TRACE] EVENT:	SYNC	device	00:1c:d1:00:68:a7
+2014-Nov-06 12:41:37.730190 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.730190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.735190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [14] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.735190 [General] [TRACE] safe_update_local_db_info current_data_version: 14 ver: 14
+2014-Nov-06 12:41:37.735190 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.735190 [General] [TRACE] update_some_user_data. data_version [14].
+2014-Nov-06 12:41:37.735190 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:41:37.735190 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:37.735190 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:37.735190 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.740190 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:37.740190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.740190 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.740190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.740190 [General] [TRACE] ****** Incrementing Version from 14 -> 15
+2014-Nov-06 12:41:37.740190 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.745190 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.745190 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 15
+2014-Nov-06 12:41:37.745190 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 15 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.745190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.745190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [15] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.750190 [General] [TRACE] safe_update_local_db_info current_data_version: 14 ver: 15
+2014-Nov-06 12:41:37.750190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.750190 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.750190 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.750190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.755190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [15] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.755190 [General] [TRACE] safe_update_local_db_info current_data_version: 15 ver: 15
+2014-Nov-06 12:41:37.755190 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.755190 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.755190 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:37.760190 [General] [TRACE] SwitchBug: should_notify_ready_to_switch, same timestamp: rep: cccccccc db: cccccccc return false;
+2014-Nov-06 12:41:37.760190 [General] [TRACE] SwitchBug: RnR_Replication_type: do_master_data_changed_logic - fillterring out calling notify_ready_for_switch - should_notify_ready_to_switch is false
+2014-Nov-06 12:41:37.760190 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:37.760190 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:37.760190 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:37.760190 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:37.760190 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:68:a7) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:37.760190 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:37.760190 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:37.760190 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:37.760190 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:37.760190 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:37.760190 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:37.760190 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:37.760190 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:37.760190 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:37.760190 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.760190 [General] [TRACE] update_some_master_data. data_version [15].
+2014-Nov-06 12:41:37.760190 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:37.760190 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:37.760190 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.765190 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:37.765190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.765190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:37.765190 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.765190 [General] [TRACE] ****** Incrementing Version from 15 -> 16
+2014-Nov-06 12:41:37.765190 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:37.765190 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:37.770190 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.770190 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 16
+2014-Nov-06 12:41:37.770190 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [16] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.770190 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 16 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:37.775191 [General] [TRACE] safe_update_local_db_info current_data_version: 15 ver: 16
+2014-Nov-06 12:41:37.775191 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:37.775191 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:37.775191 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.775191 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:37.775191 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [16] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:37.780191 [General] [TRACE] safe_update_local_db_info current_data_version: 16 ver: 16
+2014-Nov-06 12:41:37.780191 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:37.780191 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.780191 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:37.780191 [General] [TRACE] SwitchBug: should_notify_ready_to_switch, same timestamp: rep: cccccccc db: cccccccc return false;
+2014-Nov-06 12:41:37.780191 [General] [TRACE] SwitchBug: RnR_Replication_type: do_master_data_changed_logic - fillterring out calling notify_ready_for_switch - should_notify_ready_to_switch is false
+2014-Nov-06 12:41:37.785191 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.785191 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.785191 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:37.785191 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:37.870192 [General] [TRACE] OG timestamp_sync_management() Finished sync process for 00:1c:d1:00:68:a7
+2014-Nov-06 12:41:38.440204 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:38.440204 [General] [TRACE] update_some_master_data. data_version [16].
+2014-Nov-06 12:41:38.440204 [General] [TRACE] update_internal_iom_chunk. (master_area)
+2014-Nov-06 12:41:38.440204 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:38.440204 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:38.445204 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:38.445204 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:38.445204 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:38.445204 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:38.445204 [General] [TRACE] ****** Incrementing Version from 16 -> 17
+2014-Nov-06 12:41:38.445204 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:38.450204 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:38.450204 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:38.450204 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 17
+2014-Nov-06 12:41:38.450204 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [17] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:38.450204 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 17 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:38.455204 [General] [TRACE] safe_update_local_db_info current_data_version: 16 ver: 17
+2014-Nov-06 12:41:38.455204 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:38.455204 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:38.455204 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:38.460204 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [17] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:38.460204 [General] [TRACE] safe_update_local_db_info current_data_version: 17 ver: 17
+2014-Nov-06 12:41:38.460204 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:38.465204 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:38.465204 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:38.465204 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:38.465204 [General] [TRACE] SwitchBug: should_notify_ready_to_switch, same timestamp: rep: cccccccc db: cccccccc return false;
+2014-Nov-06 12:41:38.465204 [General] [TRACE] SwitchBug: RnR_Replication_type: do_master_data_changed_logic - fillterring out calling notify_ready_for_switch - should_notify_ready_to_switch is false
+2014-Nov-06 12:41:43.796311 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:43.796311 [General] [TRACE] update_some_user_data. data_version [17].
+2014-Nov-06 12:41:43.796311 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:41:43.796311 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:43.796311 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:43.796311 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:43.801312 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:43.801312 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:43.801312 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:43.801312 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:43.801312 [General] [TRACE] ****** Incrementing Version from 17 -> 18
+2014-Nov-06 12:41:43.801312 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:43.806312 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:43.806312 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 18
+2014-Nov-06 12:41:43.806312 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 18 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:43.806312 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:43.806312 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [18] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:43.811312 [General] [TRACE] safe_update_local_db_info current_data_version: 17 ver: 18
+2014-Nov-06 12:41:43.811312 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:43.811312 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:43.811312 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:43.816312 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [18] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:43.816312 [General] [TRACE] safe_update_local_db_info current_data_version: 18 ver: 18
+2014-Nov-06 12:41:43.816312 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:43.816312 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:43.816312 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:43.821312 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:43.821312 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:43.821312 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:43.821312 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:43.821312 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:43.821312 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:68:a7) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:43.821312 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:43.821312 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:43.821312 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:43.821312 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:43.821312 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:43.821312 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:43.821312 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:43.821312 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:43.821312 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:43.821312 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:43.821312 [General] [TRACE] update_some_master_data. data_version [18].
+2014-Nov-06 12:41:43.821312 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:43.821312 [General] [TRACE] update_some_master_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:45.796351 [General] [TRACE] EVENT:	WAIT
+2014-Nov-06 12:41:45.796351 [General] [TRACE] RnR_Clock_type::clock_setup():  sample rate: 0 is_SoE: 1 clock_master: 00:1c:d1:00:65:48
+2014-Nov-06 12:41:45.796351 [General] [TRACE] RnR_Clock_type::clock_setup():  configuration hadn't changed. Return
+2014-Nov-06 12:41:45.796351 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] callback for set clocks: soe_master_mac: [00:1c:d1:00:65:48].  SR: [48000]. IOMclock_source: [0]. minor_cs: [1]. cs_follow_mode: [1].
+2014-Nov-06 12:41:45.796351 [General] [TRACE] called IOM set_clock_source_follow_mode for device 00:1c:d1:00:65:48 with 1
+2014-Nov-06 12:41:45.796351 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:45.796351 [General] [TRACE] OG AG_IOModulesImp::send_sample_rate_and_clocks():  mac: 00:1c:d1:00:65:48 sample_rate: bb80 clock_source: 0
+2014-Nov-06 12:41:45.796351 [General] [TRACE] RnR_API::set_connections(): number: 4
+2014-Nov-06 12:41:45.796351 [General] [TRACE] clock setup for device 00:1c:d1:00:65:48 master clock 00:1c:d1:00:65:48 major clock source 2 minor clock source 1 sample rate 48000 follow clock source mode: 1
+2014-Nov-06 12:41:45.796351 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:45.796351 [General] [TRACE] update_some_user_data. data_version [18].
+2014-Nov-06 12:41:45.796351 [General] [TRACE] update_internal_req_connections. (user_area)
+2014-Nov-06 12:41:45.796351 [General] [TRACE] update_some_user_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:45.801352 [General] [TRACE] received a frame with opcode 8211 which isn't registered
+2014-Nov-06 12:41:45.801352 [General] [TRACE] src node 00:1c:d1:00:65:48(iobox)dst node 00:0e:0c:63:33:1e(iobox master)
+2014-Nov-06 12:41:45.826352 [General] [TRACE] RnR_Clock_type::clock_setup():  sample rate: 0 is_SoE: 1 clock_master: 00:1c:d1:00:65:48
+2014-Nov-06 12:41:45.826352 [General] [TRACE] RnR_Clock_type::clock_setup():  configuration hadn't changed. Return
+2014-Nov-06 12:41:45.826352 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:45.826352 [General] [TRACE] called IOM set_clock_source_follow_mode for device 00:1c:d1:00:65:48 with 1
+2014-Nov-06 12:41:45.826352 [General] [TRACE] RnR_API::set_connections(): number: 4
+2014-Nov-06 12:41:45.826352 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:45.826352 [General] [TRACE] update_some_user_data. data_version [18].
+2014-Nov-06 12:41:45.826352 [General] [TRACE] update_internal_req_connections. (user_area)
+2014-Nov-06 12:41:45.831352 [General] [TRACE] update_some_user_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:46.471365 [General] [TRACE] pre disconnect3 00:1b:21:29:b0:50
+2014-Nov-06 12:41:46.471365 [General] [TRACE] post disconnect3
+2014-Nov-06 12:41:46.471365 [General] [TRACE] EVENT:	DOWN	sgs	00:1b:21:29:b0:50
+2014-Nov-06 12:41:46.471365 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:46.471365 [General] [TRACE] EVENT:	SGS_STATE	device	00:1b:21:29:b0:50	offline
+2014-Nov-06 12:41:46.471365 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:46.471365 [General] [TRACE] update_some_user_data. data_version [18].
+2014-Nov-06 12:41:46.471365 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:41:46.471365 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:46.471365 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:46.471365 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:46.476365 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:46.476365 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:46.476365 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:46.476365 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:46.476365 [General] [TRACE] ****** Incrementing Version from 18 -> 19
+2014-Nov-06 12:41:46.476365 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:46.481365 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:46.481365 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:46.481365 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 19
+2014-Nov-06 12:41:46.481365 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [19] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:46.481365 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 19 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:46.486365 [General] [TRACE] safe_update_local_db_info current_data_version: 18 ver: 19
+2014-Nov-06 12:41:46.486365 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:46.486365 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:46.486365 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:46.491365 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [19] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:46.491365 [General] [TRACE] safe_update_local_db_info current_data_version: 19 ver: 19
+2014-Nov-06 12:41:46.491365 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:46.491365 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:46.491365 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:46.496365 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:46.496365 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:46.496365 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:46.496365 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:46.496365 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:46.496365 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:68:a7) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:46.496365 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:46.496365 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:46.496365 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:46.496365 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:46.496365 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:46.496365 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:46.496365 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:46.496365 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:46.496365 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:46.496365 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:46.496365 [General] [TRACE] update_some_master_data. data_version [19].
+2014-Nov-06 12:41:46.496365 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:46.496365 [General] [TRACE] update_some_master_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:46.556367 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:46.556367 [General] [TRACE] update_some_master_data. data_version [19].
+2014-Nov-06 12:41:46.556367 [General] [TRACE] update_internal_iom_chunk. (master_area)
+2014-Nov-06 12:41:46.556367 [General] [TRACE] update_some_master_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:46.871373 [General] [TRACE] cam_master_type::node_up: m_mac_que.push( 00:1b:21:29:b0:50 )
+2014-Nov-06 12:41:46.871373 [General] [TRACE] cam_master_type::send_trigger, sending cam_trigger_cmd_msg_type to:00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.071377 [General] [TRACE] SGS master: ready 00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.071377 [General] [TRACE] ********** CONFIGURATION CHANGED mac: 00:1b:21:29:b0:50 0 -> 26e04b86 bundles: 0 *************
+2014-Nov-06 12:41:47.071377 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::start_configuration_data_collection(): mac: 00:1b:21:29:b0:50 0 -> 26e04b86 start_bundle_h: 0 bundles: 2
+2014-Nov-06 12:41:47.071377 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.071377 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.071377 [General] [TRACE] update_some_user_data. data_version [19].
+2014-Nov-06 12:41:47.071377 [General] [TRACE] update_internal_limits. (user_area)
+2014-Nov-06 12:41:47.071377 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:47.071377 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:47.071377 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.076377 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:47.076377 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.076377 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.076377 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.076377 [General] [TRACE] ****** Incrementing Version from 19 -> 20
+2014-Nov-06 12:41:47.081377 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:47.081377 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:47.081377 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.081377 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 20
+2014-Nov-06 12:41:47.081377 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [20] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.086377 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 20 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:47.086377 [General] [TRACE] safe_update_local_db_info current_data_version: 19 ver: 20
+2014-Nov-06 12:41:47.086377 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.086377 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.086377 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.091377 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [20] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.091377 [General] [TRACE] safe_update_local_db_info current_data_version: 20 ver: 20
+2014-Nov-06 12:41:47.091377 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:47.091377 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.091377 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:47.096377 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:47.096377 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:47.096377 [General] [WARN] revise_user_req_connections, can not find m_uuid_alias_servers_mac_map info.
+2014-Nov-06 12:41:47.096377 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:47.096377 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.096377 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:68:a7) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.096377 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:47.096377 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:47.096377 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:47.096377 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:47.096377 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:47.096377 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:47.096377 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:47.096377 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:47.096377 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:47.096377 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.096377 [General] [TRACE] update_some_master_data. data_version [20].
+2014-Nov-06 12:41:47.101378 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:47.101378 [General] [TRACE] update_some_master_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:47.271381 [General] [TRACE] SGS master: not conn 00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.271381 [General] [TRACE] pre connect00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.276381 [General] [TRACE] post connect
+2014-Nov-06 12:41:47.476385 [General] [TRACE] SGS master: init 00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.676389 [General] [TRACE] EVENT:	UP	sgs	00:1b:21:29:b0:50	ME
+2014-Nov-06 12:41:47.676389 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.676389 [General] [TRACE] update_some_user_data. data_version [20].
+2014-Nov-06 12:41:47.676389 [General] [TRACE] update_internal_gender. (user_area)
+2014-Nov-06 12:41:47.676389 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:47.676389 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:47.676389 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.681389 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:47.681389 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.681389 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.681389 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.681389 [General] [TRACE] ****** Incrementing Version from 20 -> 21
+2014-Nov-06 12:41:47.686389 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:47.686389 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:47.686389 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 21
+2014-Nov-06 12:41:47.686389 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 21 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:47.686389 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.691389 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [21] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.691389 [General] [TRACE] safe_update_local_db_info current_data_version: 20 ver: 21
+2014-Nov-06 12:41:47.691389 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.691389 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.691389 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.691389 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.696389 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [21] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.701390 [General] [TRACE] safe_update_local_db_info current_data_version: 21 ver: 21
+2014-Nov-06 12:41:47.701390 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:47.701390 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:47.701390 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.701390 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:47.706390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.706390 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.706390 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.706390 [General] [TRACE] ****** Incrementing Version from 21 -> 22
+2014-Nov-06 12:41:47.711390 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:47.711390 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:47.711390 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 22
+2014-Nov-06 12:41:47.711390 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 22 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:47.711390 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.716390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [22] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.716390 [General] [TRACE] safe_update_local_db_info current_data_version: 21 ver: 22
+2014-Nov-06 12:41:47.716390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.716390 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.716390 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.716390 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.721390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [22] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.726390 [General] [TRACE] safe_update_local_db_info current_data_version: 22 ver: 22
+2014-Nov-06 12:41:47.726390 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:47.726390 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.726390 [General] [TRACE] update_some_user_data. data_version [22].
+2014-Nov-06 12:41:47.726390 [General] [TRACE] update_internal_orphan. (user_area)
+2014-Nov-06 12:41:47.726390 [General] [TRACE] update_some_user_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:47.726390 [General] [TRACE] event RnR_EventsManager_type::rnr_apa_up took 50001 microseconds to process
+2014-Nov-06 12:41:47.726390 [General] [TRACE] event RnR_EventsManager_type::rnr_processing_server delayed in Q: 50001
+2014-Nov-06 12:41:47.726390 [General] [TRACE] EVENT:	PROCESSING SERVER	00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.726390 [General] [TRACE] attach server started
+2014-Nov-06 12:41:47.726390 [General] [TRACE] rnr call: DeleteAllServerInstances
+2014-Nov-06 12:41:47.726390 [General] [TRACE] attach server ended
+2014-Nov-06 12:41:47.726390 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.726390 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.726390 [General] [TRACE] update_some_user_data. data_version [22].
+2014-Nov-06 12:41:47.726390 [General] [TRACE] update_internal_servers. (user_area)
+2014-Nov-06 12:41:47.726390 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:47.726390 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:47.731390 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.731390 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:47.731390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.731390 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.731390 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.731390 [General] [TRACE] ****** Incrementing Version from 22 -> 23
+2014-Nov-06 12:41:47.736390 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:47.736390 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:47.736390 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 23
+2014-Nov-06 12:41:47.736390 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 23 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:47.736390 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.741390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [23] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.741390 [General] [TRACE] safe_update_local_db_info current_data_version: 22 ver: 23
+2014-Nov-06 12:41:47.741390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.746390 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.746390 [General] [TRACE] SSh: set processing server 00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.746390 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status delayed in Q: 70001
+2014-Nov-06 12:41:47.746390 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status skipped, deadline missed delay:70001 deadline:50000
+2014-Nov-06 12:41:47.746390 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status delayed in Q: 70001
+2014-Nov-06 12:41:47.746390 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status skipped, deadline missed delay:70001 deadline:50000
+2014-Nov-06 12:41:47.746390 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.746390 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.746390 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [23] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.751391 [General] [TRACE] safe_update_local_db_info current_data_version: 23 ver: 23
+2014-Nov-06 12:41:47.751391 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:47.751391 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:47.751391 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:47.756391 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:47.756391 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.756391 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:68:a7) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.756391 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:47.756391 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:47.756391 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:47.756391 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:47.756391 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:47.756391 [General] [TRACE] create dummy bundles: nothing to do! no passive endpoint
+2014-Nov-06 12:41:47.756391 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:47.756391 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:47.756391 [General] [TRACE] empty bundles list
+2014-Nov-06 12:41:47.756391 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.756391 [General] [TRACE] update_some_master_data. data_version [23].
+2014-Nov-06 12:41:47.756391 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0x0]. (master_area)
+2014-Nov-06 12:41:47.756391 [General] [TRACE] update_some_master_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:47.756391 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.756391 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:47.761391 [General] [TRACE] EVENT:	SGS_STATE	device	00:1b:21:29:b0:50	clean
+2014-Nov-06 12:41:47.761391 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.761391 [General] [TRACE] update_some_user_data. data_version [23].
+2014-Nov-06 12:41:47.761391 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:41:47.761391 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:47.761391 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:47.761391 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.761391 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:47.761391 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.761391 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.761391 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.766391 [General] [TRACE] ****** Incrementing Version from 23 -> 24
+2014-Nov-06 12:41:47.766391 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:47.766391 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:47.766391 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 24
+2014-Nov-06 12:41:47.771391 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 24 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:47.771391 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.771391 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [24] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.776391 [General] [TRACE] safe_update_local_db_info current_data_version: 23 ver: 24
+2014-Nov-06 12:41:47.776391 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.776391 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.776391 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.776391 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.781391 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [24] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.781391 [General] [TRACE] safe_update_local_db_info current_data_version: 24 ver: 24
+2014-Nov-06 12:41:47.781391 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:47.781391 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [0].
+2014-Nov-06 12:41:47.786391 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:47.786391 [General] [TRACE] **++++++++++++   Synced Devices dump:
+2014-Nov-06 12:41:47.786391 [General] [TRACE] [endpoint] name: SGServer(00:1b:21:29:b0:50) gender: SGServer TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.786391 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:65:48) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.786391 [General] [TRACE] [endpoint] name: SGIO(00:1c:d1:00:68:a7) gender: SGIO TX bundles count: 0 RX bundles count: 0
+2014-Nov-06 12:41:47.786391 [General] [TRACE] **++++++++++++   Connections dump:
+2014-Nov-06 12:41:47.786391 [General] [TRACE] 00:1b:21:29:b0:50_0 -> 00:1c:d1:00:68:a7_3 bsz:16 lat:5
+2014-Nov-06 12:41:47.786391 [General] [TRACE] 00:1b:21:29:b0:50_1 -> 00:1c:d1:00:68:a7_4 bsz:16 lat:5
+2014-Nov-06 12:41:47.786391 [General] [TRACE] 00:1c:d1:00:68:a7_0 -> 00:1b:21:29:b0:50_0 bsz:16 lat:0
+2014-Nov-06 12:41:47.786391 [General] [TRACE] 00:1c:d1:00:68:a7_1 -> 00:1b:21:29:b0:50_1 bsz:16 lat:0
+2014-Nov-06 12:41:47.786391 [General] [TRACE] **++++++++++++   End of Connections dump
+2014-Nov-06 12:41:47.786391 [General] [TRACE] ================  Connections Compilation Start ===================
+2014-Nov-06 12:41:47.786391 [General] [TRACE] ============groups, phase 1============================
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1b:21:29:b0:50[52428] dst:00:1c:d1:00:68:a7[52428] bsz:16 lat:5 channels: 0->3 1->4 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1c:d1:00:68:a7[52428] dst:00:1b:21:29:b0:50[52428] bsz:16 lat:0 channels: 0->0 1->1 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] ============groups, phase 2============================
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1b:21:29:b0:50[52428] dst:00:1c:d1:00:68:a7[52428] bsz:16 lat:5 channels: 0->3 1->4 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1c:d1:00:68:a7[52428] dst:00:1b:21:29:b0:50[52428] bsz:16 lat:0 channels: 0->0 1->1 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [endpoint] name: SGServer(00:1b:21:29:b0:50) gender: SGServer TX bundles count: 1 RX bundles count: 1
+2014-Nov-06 12:41:47.791391 [General] [TRACE] ============groups, phase 3============================
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1b:21:29:b0:50[0] dst:00:1c:d1:00:68:a7[0] bsz:16 lat:5 channels: 0->3 1->4 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1c:d1:00:68:a7[0] dst:00:1b:21:29:b0:50[0] bsz:16 lat:0 channels: 0->0 1->1 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] [connection group] src:00:1c:d1:00:65:48[0] dst:00:1b:21:29:b0:50[1] bsz:16 lat:0 channels: 
+2014-Nov-06 12:41:47.791391 [General] [TRACE] ================  Connections Compilation Finished with 0 ===================
+2014-Nov-06 12:41:47.791391 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.791391 [General] [TRACE] update_some_master_data. data_version [24].
+2014-Nov-06 12:41:47.791391 [General] [TRACE] update_internal_pending_configuration. P.conf_id [0xcbc4653d]. (master_area)
+2014-Nov-06 12:41:47.791391 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:47.791391 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.791391 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:47.796391 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.796391 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.796391 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:47.796391 [General] [TRACE] ****** Incrementing Version from 24 -> 25
+2014-Nov-06 12:41:47.796391 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:47.796391 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:47.796391 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 25
+2014-Nov-06 12:41:47.796391 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 25 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:47.801392 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.801392 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [25] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.806392 [General] [TRACE] safe_update_local_db_info current_data_version: 24 ver: 25
+2014-Nov-06 12:41:47.806392 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:47.806392 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:47.806392 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.806392 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:47.811392 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [25] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:47.816392 [General] [TRACE] safe_update_local_db_info current_data_version: 25 ver: 25
+2014-Nov-06 12:41:47.816392 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:47.816392 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [cbc4653d].
+2014-Nov-06 12:41:47.816392 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:47.816392 [General] [TRACE] SwitchBug: do_master_data_changed_logic: notify_compilation_modified - should_notify_compilation_modified, no errors & diff in conf ID db:[cbc4653d] replication: [0]. data_version [25]
+2014-Nov-06 12:41:47.816392 [General] [TRACE] SwitchBug: should_notify_ready_to_switch, same timestamp: rep: cccccccc db: cccccccc return false;
+2014-Nov-06 12:41:47.816392 [General] [TRACE] SwitchBug: RnR_Replication_type: do_master_data_changed_logic - fillterring out calling notify_ready_for_switch - should_notify_ready_to_switch is false
+2014-Nov-06 12:41:47.816392 [General] [TRACE] SwitchBug: do_master_data_changed_logic: notify_compilation_modified. db_version: 25
+2014-Nov-06 12:41:47.816392 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.816392 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [cbc4653d].
+2014-Nov-06 12:41:47.821392 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:47.821392 [General] [TRACE] SwitchBug: db_value_while_compilation_modified APPROVED!. rnr_rep: 25 rnr_audio: 25
+2014-Nov-06 12:41:47.821392 [General] [TRACE] **************
+2014-Nov-06 12:41:47.821392 [General] [TRACE] *** apply_bundles_to_device to mac: 00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.821392 [General] [TRACE] rnr call: sample_rate_set
+2014-Nov-06 12:41:47.821392 [General] [TRACE] OG connectivity_master_type::sample_rate_set(): mac: 00:1b:21:29:b0:50 sample_rate: 48000
+2014-Nov-06 12:41:47.821392 [General] [TRACE] connectivity_master sending request:set sample rate to:00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.826392 [General] [TRACE] audio command set sample rate took 5000
+2014-Nov-06 12:41:47.826392 [General] [TRACE] rnr call: clear_audio_node_config
+2014-Nov-06 12:41:47.826392 [General] [TRACE] connectivity_master sending request:Rx bundle delete to:00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.831392 [General] [TRACE] audio command Rx bundle delete took 5000
+2014-Nov-06 12:41:47.831392 [General] [TRACE] rnr call: config_new_tx
+2014-Nov-06 12:41:47.831392 [General] [TRACE] connectivity_master sending request:Tx bundle new to:00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.836392 [General] [TRACE] audio command Tx bundle new took 5000
+2014-Nov-06 12:41:47.836392 [General] [TRACE] rnr call: config_new_rx
+2014-Nov-06 12:41:47.836392 [General] [TRACE] connectivity_master sending request:Rx bundle new to:00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.841392 [General] [TRACE] audio command Rx bundle new took 5000
+2014-Nov-06 12:41:47.841392 [General] [TRACE] rnr call: config_new_rx
+2014-Nov-06 12:41:47.841392 [General] [TRACE] connectivity_master sending request:Rx bundle new to:00:1b:21:29:b0:50
+2014-Nov-06 12:41:47.846392 [General] [TRACE] audio command Rx bundle new took 5000
+2014-Nov-06 12:41:47.846392 [General] [TRACE] SwitchBug: apply_bundles_to_device: mac [00:1b:21:29:b0:50] conf_id [cbc4653d]. data_version [25].
+2014-Nov-06 12:41:47.846392 [General] [TRACE] **************
+2014-Nov-06 12:41:47.846392 [General] [TRACE] *** apply_bundles_to_device to mac: 00:1c:d1:00:65:48
+2014-Nov-06 12:41:47.846392 [General] [TRACE] rnr call: clear_audio_node_config
+2014-Nov-06 12:41:47.846392 [General] [TRACE] connectivity_master sending request:Rx bundle delete to:00:1c:d1:00:65:48
+2014-Nov-06 12:41:47.916394 [General] [TRACE] audio command Rx bundle delete took 70002
+2014-Nov-06 12:41:47.916394 [General] [TRACE] rnr call: config_new_tx
+2014-Nov-06 12:41:47.916394 [General] [TRACE] connectivity_master sending request:Tx bundle new to:00:1c:d1:00:65:48
+2014-Nov-06 12:41:47.921394 [General] [TRACE] audio command Tx bundle new took 5000
+2014-Nov-06 12:41:47.921394 [General] [TRACE] SwitchBug: apply_bundles_to_device: mac [00:1c:d1:00:65:48] conf_id [cbc4653d]. data_version [25].
+2014-Nov-06 12:41:47.921394 [General] [TRACE] **************
+2014-Nov-06 12:41:47.921394 [General] [TRACE] *** apply_bundles_to_device to mac: 00:1c:d1:00:68:a7
+2014-Nov-06 12:41:47.921394 [General] [TRACE] rnr call: clear_audio_node_config
+2014-Nov-06 12:41:47.921394 [General] [TRACE] connectivity_master sending request:Rx bundle delete to:00:1c:d1:00:68:a7
+2014-Nov-06 12:41:47.991395 [General] [TRACE] audio command Rx bundle delete took 70001
+2014-Nov-06 12:41:47.991395 [General] [TRACE] rnr call: config_new_rx
+2014-Nov-06 12:41:47.991395 [General] [TRACE] connectivity_master sending request:Rx bundle new to:00:1c:d1:00:68:a7
+2014-Nov-06 12:41:48.011396 [General] [TRACE] audio command Rx bundle new took 20001
+2014-Nov-06 12:41:48.011396 [General] [TRACE] rnr call: config_new_tx
+2014-Nov-06 12:41:48.011396 [General] [TRACE] connectivity_master sending request:Tx bundle new to:00:1c:d1:00:68:a7
+2014-Nov-06 12:41:48.016396 [General] [TRACE] audio command Tx bundle new took 5000
+2014-Nov-06 12:41:48.016396 [General] [TRACE] SwitchBug: apply_bundles_to_device: mac [00:1c:d1:00:68:a7] conf_id [cbc4653d]. data_version [25].
+2014-Nov-06 12:41:48.016396 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:48.016396 [General] [TRACE] update_some_user_data. data_version [25].
+2014-Nov-06 12:41:48.016396 [General] [TRACE] update_internal_pending_configuration_id. P.conf_id [0xcbc4653d]. (user_area)
+2014-Nov-06 12:41:48.016396 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:48.016396 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:48.016396 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:48.016396 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:48.016396 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:48.016396 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:48.016396 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:48.021396 [General] [TRACE] ****** Incrementing Version from 25 -> 26
+2014-Nov-06 12:41:48.021396 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:48.021396 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:48.026396 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 26
+2014-Nov-06 12:41:48.026396 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 26 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:48.026396 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:48.026396 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [26] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:48.031396 [General] [TRACE] safe_update_local_db_info current_data_version: 25 ver: 26
+2014-Nov-06 12:41:48.031396 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:48.031396 [General] [TRACE] SwitchBug: update need_config_switch. need_config_switch.size()  [3].
+2014-Nov-06 12:41:48.031396 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:48.031396 [General] [TRACE] event RnR_EventsManager_type::rnr_compilation_modified took 210004 microseconds to process
+2014-Nov-06 12:41:48.031396 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status delayed in Q: 155003
+2014-Nov-06 12:41:48.031396 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status skipped, deadline missed delay:155003 deadline:50000
+2014-Nov-06 12:41:48.031396 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status delayed in Q: 155003
+2014-Nov-06 12:41:48.031396 [General] [TRACE] event RnR_EventsManager_type::rnr_iobox_status skipped, deadline missed delay:155003 deadline:50000
+2014-Nov-06 12:41:48.031396 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:48.036396 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [26] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:48.041396 [General] [TRACE] safe_update_local_db_info current_data_version: 26 ver: 26
+2014-Nov-06 12:41:48.041396 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:48.041396 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:48.041396 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [cbc4653d].
+2014-Nov-06 12:41:48.041396 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: m_should_take_timestamp_dirty_bit is ON, should get a new time_stamp.
+2014-Nov-06 12:41:48.116398 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:48.116398 [General] [TRACE] update_some_master_data. data_version [26].
+2014-Nov-06 12:41:48.116398 [General] [TRACE] update_internal_timestamp_to_switch. (master_area)
+2014-Nov-06 12:41:48.116398 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:48.116398 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:48.121398 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:48.121398 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:48.121398 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:48.121398 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:48.121398 [General] [TRACE] ****** Incrementing Version from 26 -> 27
+2014-Nov-06 12:41:48.126398 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:48.126398 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:48.126398 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:48.126398 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 27
+2014-Nov-06 12:41:48.126398 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 27 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:48.126398 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [27] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:48.131398 [General] [TRACE] safe_update_local_db_info current_data_version: 26 ver: 27
+2014-Nov-06 12:41:48.131398 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:48.131398 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:48.131398 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:48.136398 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [27] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:48.141398 [General] [TRACE] safe_update_local_db_info current_data_version: 27 ver: 27
+2014-Nov-06 12:41:48.141398 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:48.141398 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:48.141398 [General] [TRACE] db_state_changed: R.ConfID: [cccccccc] P.ConfID: [cbc4653d].
+2014-Nov-06 12:41:48.141398 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:41:48.141398 [General] [TRACE] SwitchBug: RnR_Replication_type: do_master_data_changed_logic - calling notify_ready_for_switch
+2014-Nov-06 12:41:48.141398 [General] [TRACE] SwitchBug: RnR_EventsManager_type: notify_ready_for_switch
+2014-Nov-06 12:41:48.141398 [General] [TRACE] SwitchBug: RnR_EventsManager_type: rnr_ready_for_switch
+2014-Nov-06 12:41:48.141398 [General] [TRACE] SwitchBug: rnr_audio: ready_for_switch
+2014-Nov-06 12:41:48.141398 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: rnr_audio: ready_for_switch - found uuid: [67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a:] the user in db
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: rnr_audio: switch_all: group_master_mac: [00:1c:d1:00:65:48]. need_config_switch.size [3]
+2014-Nov-06 12:41:48.146398 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: rnr_audio: switch_all - Found my sharing group
+2014-Nov-06 12:41:48.146398 [General] [TRACE] rnr call: set_current_configuration_bundles
+2014-Nov-06 12:41:48.146398 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::set_current_configuration_bundles() conf_id:cbc4653d bundles count:3 Devices: 3
+2014-Nov-06 12:41:48.146398 [General] [TRACE] connectivity_master_type::set_current_configuration_bundles(): NEW  node_statistic NS conf_id:cbc4653d src:00:1b:21:29:b0:50 dst:00:1c:d1:00:68:a7 src_h:0 src_chs:2 dst_h:0 dst_chs:2 rx_desc:0 tx_desc:0 bs:16 lat:5 list size: 1
+2014-Nov-06 12:41:48.146398 [General] [TRACE] connectivity_master_type::set_current_configuration_bundles(): NEW  node_statistic NS conf_id:cbc4653d src:00:1c:d1:00:68:a7 dst:00:1b:21:29:b0:50 src_h:0 src_chs:2 dst_h:0 dst_chs:2 rx_desc:0 tx_desc:0 bs:16 lat:0 list size: 2
+2014-Nov-06 12:41:48.146398 [General] [TRACE] connectivity_master_type::set_current_configuration_bundles(): NEW  node_statistic NS conf_id:cbc4653d src:00:1c:d1:00:65:48 dst:00:1b:21:29:b0:50 src_h:0 src_chs:0 dst_h:1 dst_chs:0 rx_desc:0 tx_desc:0 bs:16 lat:0 list size: 3
+2014-Nov-06 12:41:48.146398 [General] [TRACE] connectivity_master_type::set_current_configuration_bundles(): Starting collect new configuration statistics for: cbc4653d
+2014-Nov-06 12:41:48.146398 [General] [TRACE] rnr call: switch_config
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: switch_config_internal: conf_id [cbc4653d].
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: switch_config: mac [00:1b:21:29:b0:50] was running conf_id [cccccccc] now running conf_id [cbc4653d]
+2014-Nov-06 12:41:48.146398 [General] [TRACE] rnr call: switch_config
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: switch_config_internal: conf_id [cbc4653d].
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: switch_config: mac [00:1c:d1:00:65:48] was running conf_id [cccccccc] now running conf_id [cbc4653d]
+2014-Nov-06 12:41:48.146398 [General] [TRACE] rnr call: switch_config
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: switch_config_internal: conf_id [cbc4653d].
+2014-Nov-06 12:41:48.146398 [General] [TRACE] SwitchBug: switch_config: mac [00:1c:d1:00:68:a7] was running conf_id [cccccccc] now running conf_id [cbc4653d]
+2014-Nov-06 12:41:48.316402 [General] [TRACE] connectivity_master_type::handle_audio_bundle_switch_rsp_msg result_code: CMRC_SUCCESS MAC: 00:1b:21:29:b0:50 current_ts: 1 switch_timestamp: d5e08e00 received_conf_id: cbc4653d m_pending_conf_id: cbc4653d m_current_conf_id: 26e04b86 response time [ms]: 5
+2014-Nov-06 12:41:48.316402 [General] [TRACE] connectivity_master_type::handle_audio_bundle_switch_rsp_msg result_code: CMRC_SUCCESS MAC: 00:1c:d1:00:65:48 current_ts: d5e043d1 switch_timestamp: d5e08e00 received_conf_id: cbc4653d m_pending_conf_id: cbc4653d m_current_conf_id: 26e04b86 response time [ms]: 5
+2014-Nov-06 12:41:48.316402 [General] [TRACE] connectivity_master_type::handle_audio_bundle_switch_rsp_msg result_code: CMRC_SUCCESS MAC: 00:1c:d1:00:68:a7 current_ts: d5e043ec switch_timestamp: d5e08e00 received_conf_id: cbc4653d m_pending_conf_id: cbc4653d m_current_conf_id: 26e04b86 response time [ms]: 5
+2014-Nov-06 12:41:48.918416 [General] [TRACE] ********** CONFIGURATION CHANGED mac: 00:1b:21:29:b0:50 26e04b86 -> cbc4653d bundles: 2 *************
+2014-Nov-06 12:41:48.918416 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::start_configuration_data_collection(): mac: 00:1b:21:29:b0:50 26e04b86 -> cbc4653d start_bundle_h: 2 bundles: 2
+2014-Nov-06 12:41:48.918416 [General] [TRACE] ********** CONFIGURATION CHANGED mac: 00:1c:d1:00:65:48 26e04b86 -> cbc4653d bundles: 0 *************
+2014-Nov-06 12:41:48.918416 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::start_configuration_data_collection(): mac: 00:1c:d1:00:65:48 26e04b86 -> cbc4653d start_bundle_h: 0 bundles: 0
+2014-Nov-06 12:41:48.918416 [General] [TRACE] ********** CONFIGURATION CHANGED mac: 00:1c:d1:00:68:a7 26e04b86 -> cbc4653d bundles: 1 *************
+2014-Nov-06 12:41:48.918416 [General] [TRACE] @@@@@@@@@@@@ connectivity_master_type::start_configuration_data_collection(): mac: 00:1c:d1:00:68:a7 26e04b86 -> cbc4653d start_bundle_h: 1 bundles: 1
+2014-Nov-06 12:41:49.123420 [General] [TRACE] connectivity_master_type::is_all_bundle_data_collected() 1
+2014-Nov-06 12:41:49.123420 [General] [TRACE] connectivity_master_type::configuration_change_notifications(): All data is collected. NOTIFY CONFIGURATION CHANGE
+2014-Nov-06 12:41:49.123420 [General] [TRACE]        NS conf_id:cbc4653d src:00:1c:d1:00:65:48 dst:00:1b:21:29:b0:50 src_h:0 src_chs:0 dst_h:1 dst_chs:0 rx_desc:1 tx_desc:1 bs:16 lat:0
+2014-Nov-06 12:41:49.123420 [General] [TRACE]        NS conf_id:cbc4653d src:00:1c:d1:00:68:a7 dst:00:1b:21:29:b0:50 src_h:0 src_chs:2 dst_h:0 dst_chs:2 rx_desc:1 tx_desc:1 bs:16 lat:0
+2014-Nov-06 12:41:49.123420 [General] [TRACE]        NS conf_id:cbc4653d src:00:1b:21:29:b0:50 dst:00:1c:d1:00:68:a7 src_h:0 src_chs:2 dst_h:0 dst_chs:2 rx_desc:1 tx_desc:1 bs:16 lat:5
+2014-Nov-06 12:41:49.123420 [General] [TRACE] SwitchBug: audio_conf_changed - do_it_once1. current_conf_id[cdcdcdcd] changed to: [cbc4653d].
+2014-Nov-06 12:41:49.123420 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:49.128420 [General] [TRACE] SwitchBug: audio_conf_changed - do_it_once2. current_conf_id[cdcdcdcd] changed to: [cbc4653d].
+2014-Nov-06 12:41:49.128420 [General] [TRACE] SwitchBug: audio_conf_changed - do_it_once3. current_conf_id[cdcdcdcd] changed to: [cbc4653d].
+2014-Nov-06 12:41:49.128420 [General] [TRACE] SwitchBug: audio_conf_changed - do_it_once4. current_conf_id[cdcdcdcd] changed to: [cbc4653d].
+2014-Nov-06 12:41:49.128420 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:49.128420 [General] [TRACE] update_some_master_data. data_version [27].
+2014-Nov-06 12:41:49.128420 [General] [TRACE] update_internal_running_configuration. R.conf_id [0xcbc4653d]. (master_area)
+2014-Nov-06 12:41:49.128420 [General] [TRACE] Amitb: update_master_space
+2014-Nov-06 12:41:49.128420 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:49.128420 [General] [TRACE] rnr_ring_db_sgring_type::update_master_space_internal() result: OK
+2014-Nov-06 12:41:49.128420 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:49.128420 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:49.128420 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:49.133420 [General] [TRACE] ****** Incrementing Version from 27 -> 28
+2014-Nov-06 12:41:49.133420 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:49.133420 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:49.133420 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:49.138420 [General] [TRACE] CApp::audio_configuration_change(): New configuration bundles:3
+2014-Nov-06 12:41:49.138420 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 28
+2014-Nov-06 12:41:49.138420 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 28 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:49.138420 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [28] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:49.143420 [General] [TRACE] safe_update_local_db_info current_data_version: 27 ver: 28
+2014-Nov-06 12:41:49.143420 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:49.143420 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:49.143420 [General] [TRACE] SwitchBug: audio_conf_changed - current_conf_id[cdcdcdcd] changed to: [cbc4653d].
+2014-Nov-06 12:41:49.143420 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:49.143420 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:49.148420 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [28] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:49.153420 [General] [TRACE] safe_update_local_db_info current_data_version: 28 ver: 28
+2014-Nov-06 12:41:49.153420 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:49.153420 [General] [TRACE] update_some_user_data. data_version [28].
+2014-Nov-06 12:41:49.153420 [General] [TRACE] update_internal_running_configuration_id. R.conf_id: [0xcbc4653d]. (user_area)
+2014-Nov-06 12:41:49.153420 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:41:49.153420 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:41:49.153420 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:41:49.153420 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:41:49.153420 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:49.153420 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:49.153420 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:41:49.158420 [General] [TRACE] ****** Incrementing Version from 28 -> 29
+2014-Nov-06 12:41:49.158420 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:41:49.158420 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:41:49.163421 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 29
+2014-Nov-06 12:41:49.163421 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 29 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:41:49.163421 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:49.163421 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [29] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:49.168421 [General] [TRACE] safe_update_local_db_info current_data_version: 28 ver: 29
+2014-Nov-06 12:41:49.168421 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:41:49.168421 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:41:49.168421 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:49.168421 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:41:49.173421 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [29] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:41:49.178421 [General] [TRACE] safe_update_local_db_info current_data_version: 29 ver: 29
+2014-Nov-06 12:41:49.178421 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:41:49.178421 [General] [TRACE] db_state_changed: R.ConfID: [cbc4653d] P.ConfID: [cbc4653d].
+2014-Nov-06 12:41:49.183421 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied master_running_conf_id == master_pending_conf_id. cbc4653d. copy master area to replication and exit.
+2014-Nov-06 12:41:49.183421 [General] [TRACE] EVENT:	SGS_STATE	device	00:1b:21:29:b0:50	clean
+2014-Nov-06 12:41:49.183421 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:49.183421 [General] [TRACE] update_some_user_data. data_version [29].
+2014-Nov-06 12:41:49.183421 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:41:49.183421 [General] [TRACE] update_some_user_data - not sending to db. t_db_info equal after logic.
+2014-Nov-06 12:41:49.183421 [General] [TRACE] Amitb: query
+2014-Nov-06 12:41:49.183421 [General] [TRACE] db_state_changed: R.ConfID: [cbc4653d] P.ConfID: [cbc4653d].
+2014-Nov-06 12:42:16.672222 [General] [TRACE] rnr call: set_offload_role
+2014-Nov-06 12:42:16.672222 [General] [TRACE] rnr call: set_offload_role
+2014-Nov-06 12:42:16.852225 [General] [TRACE] rnr_api:reset masters
+2014-Nov-06 12:42:16.852225 [General] [TRACE] EVENT:	SUSPEND
+2014-Nov-06 12:42:16.852225 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.852225 [General] [TRACE] update_some_user_data. data_version [29].
+2014-Nov-06 12:42:16.852225 [General] [TRACE] update_internal_is_suspended[1]. (user_area)
+2014-Nov-06 12:42:16.852225 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:42:16.852225 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:42:16.852225 [General] [TRACE] OGG ring_db_type::send_request(): UPDATE_HOST_DATA
+2014-Nov-06 12:42:16.852225 [General] [TRACE] rnr_ring_db_sgring_type::update_user_space_internal() result: OK
+2014-Nov-06 12:42:16.852225 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:42:16.852225 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:42:16.852225 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_UPDATE_HOST_DATA
+2014-Nov-06 12:42:16.857225 [General] [TRACE] ****** Incrementing Version from 29 -> 30
+2014-Nov-06 12:42:16.857225 [General] [TRACE] ring_db_server_type::publish DATA_CHANGED
+2014-Nov-06 12:42:16.862226 [General] [TRACE] ring_db_client_type::send_update() OK
+2014-Nov-06 12:42:16.862226 [General] [TRACE] ring_db_client_type::handler_publish_data() $$$$$ NOTIFICATION RECEIVED $$$$$ db_change_signaled DB version: 30
+2014-Nov-06 12:42:16.862226 [General] [TRACE] Amitb rnr_ring_db_sgring_type::on_db_changed(): version: 30 m_query_db_worker_thread_condition.notify_one()
+2014-Nov-06 12:42:16.862226 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:42:16.862226 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [30] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:42:16.867226 [General] [TRACE] safe_update_local_db_info current_data_version: 29 ver: 30
+2014-Nov-06 12:42:16.867226 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal()
+2014-Nov-06 12:42:16.867226 [General] [TRACE] OGG ring_db_type::send_request(): GET_ALL_DATA
+2014-Nov-06 12:42:16.867226 [General] [TRACE] EVENT:	WAIT
+2014-Nov-06 12:42:16.867226 [General] [TRACE] EVENT:	PROCESSING SERVER	00:00:00:00:00:00
+2014-Nov-06 12:42:16.867226 [General] [TRACE] detach server started
+2014-Nov-06 12:42:16.867226 [General] [TRACE] detach server ended
+2014-Nov-06 12:42:16.867226 [General] [TRACE] pre disconnect3 00:1b:21:29:b0:50
+2014-Nov-06 12:42:16.867226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.867226 [General] [TRACE] Amitb: kvdb_master_type::apply_request() calls apply_request_GET_ALL_DATA
+2014-Nov-06 12:42:16.872226 [General] [TRACE] post disconnect3
+2014-Nov-06 12:42:16.872226 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] set_iobox_down
+2014-Nov-06 12:42:16.872226 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] set_iobox_down
+2014-Nov-06 12:42:16.872226 [General] [TRACE] rnr_ring_db_sgring_type::query_db_internal() Got version: [30] master_uuid: 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_items:2
+2014-Nov-06 12:42:16.877226 [General] [TRACE] safe_update_local_db_info current_data_version: 30 ver: 30
+2014-Nov-06 12:42:16.877226 [General] [TRACE] db_state_changed - Got signal from query_db()
+2014-Nov-06 12:42:16.877226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.877226 [General] [TRACE] update_some_user_data. data_version [30].
+2014-Nov-06 12:42:16.877226 [General] [TRACE] update_internal_servers. (user_area)
+2014-Nov-06 12:42:16.877226 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:42:16.877226 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:42:16.877226 [General] [WARN] rnr_ring_db_sgring_type::update_user_space(): UUID not equal m_rdb.uuid(): 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_uuid: 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:
+2014-Nov-06 12:42:16.877226 [General] [TRACE] SSh: set processing server 00:00:00:00:00:00
+2014-Nov-06 12:42:16.877226 [General] [TRACE] EVENT:	DOWN	sgs	00:1b:21:29:b0:50
+2014-Nov-06 12:42:16.882226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.882226 [General] [TRACE] EVENT:	DOWN	iobox	00:1c:d1:00:65:48
+2014-Nov-06 12:42:16.882226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.882226 [General] [TRACE] EVENT:	DOWN	iobox	00:1c:d1:00:68:a7
+2014-Nov-06 12:42:16.882226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.882226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.882226 [General] [TRACE] db_state_changed: R.ConfID: [cbc4653d] P.ConfID: [cbc4653d].
+2014-Nov-06 12:42:16.882226 [General] [TRACE] SwitchBug: do_user_logic_after_conf_id_applied: is_user_db_info_type_differ_only_by_conf_id == false 
+2014-Nov-06 12:42:16.887226 [General] [TRACE] EVENT:	SGS_STATE	device	00:1b:21:29:b0:50	offline
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.887226 [General] [TRACE] update_some_user_data. data_version [30].
+2014-Nov-06 12:42:16.887226 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:42:16.887226 [General] [WARN] rnr_ring_db_sgring_type::update_user_space(): UUID not equal m_rdb.uuid(): 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_uuid: 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:
+2014-Nov-06 12:42:16.887226 [General] [TRACE] EVENT:	NOSYNC	device	00:1c:d1:00:65:48
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.887226 [General] [TRACE] update_some_user_data. data_version [30].
+2014-Nov-06 12:42:16.887226 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:42:16.887226 [General] [WARN] rnr_ring_db_sgring_type::update_user_space(): UUID not equal m_rdb.uuid(): 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_uuid: 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:
+2014-Nov-06 12:42:16.887226 [General] [TRACE] EVENT:	SAMPLE_RATE	0
+2014-Nov-06 12:42:16.887226 [General] [TRACE] EVENT:	NOSYNC	device	00:1c:d1:00:68:a7
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb: query
+2014-Nov-06 12:42:16.887226 [General] [TRACE] update_some_user_data. data_version [30].
+2014-Nov-06 12:42:16.887226 [General] [TRACE] update_internal_sync_state. (user_area)
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb: update_user_space
+2014-Nov-06 12:42:16.887226 [General] [TRACE] Amitb rnr_ring_db_sgring_type::update_user_space(): lock m_mutex
+2014-Nov-06 12:42:16.887226 [General] [WARN] rnr_ring_db_sgring_type::update_user_space(): UUID not equal m_rdb.uuid(): 67:37:61:b4:8e:d5:55:48:9a:08:11:9f:c6:2e:1b:5a: host_uuid: 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::send_ctrl_msg():STOP m_state: 3
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::poll(): rc: 1 m_state: 3
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::poll() Exit
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::close() m_state = NOSTATE;
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::stop_db_client
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::disconnect_client_signals
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_client_type::stop() m_stop = 0
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_client_type::send_ctrl_msg():STOP
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_client_type::handler_control_msg(): Received STOP
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_client_type::unsubscribe_for_notification()
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_client_type::send_ctrl_msg():UNSUBSCRIBE
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_client_type::db_client_io_thread(): Exit
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::stop_discovery
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::disconnect_discovery_signals
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_discovery_net_type::stop() called
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_discovery_net_type::stop posting handle_stop
+2014-Nov-06 12:42:16.972228 [General] [TRACE] ring_db_type::stop_db_server
+2014-Nov-06 12:42:16.977228 [General] [TRACE] ring_db_type::disconnect_server_signals
+2014-Nov-06 12:42:16.977228 [General] [TRACE] ring_db_server_type::stop()
+2014-Nov-06 12:42:16.977228 [General] [TRACE] ring_db_server_type::send_ctrl_msg():STOP
+2014-Nov-06 12:42:16.977228 [General] [TRACE] ring_db_server_type::db_server_io_thread(): Exit
+2014-Nov-06 12:42:16.977228 [General] [TRACE] ring_db_server_type::run(): Exit
+2014-Nov-06 12:42:16.977228 [General] [TRACE] sgring data_byte_size [52428] is bigger then max limit[1024]
+2014-Nov-06 12:42:17.633243 [General] [WARN] set_iom_chunk - while not the IOBox owner. no in m_owned_ioboxes list.
+2014-Nov-06 12:42:17.648243 [General] [WARN] set_iom_chunk - while not the IOBox owner. no in m_owned_ioboxes list.
+2014-Nov-06 12:42:18.977270 [General] [TRACE] BUG: ring_db_type::stop() was not joined for 2 sec. continue
+2014-Nov-06 12:42:19.212277 [General] [TRACE] rnr_events: main loop ended
+2014-Nov-06 12:42:19.252277 [General] [TRACE] SSh: RnR_Offload DTOR
+2014-Nov-06 12:42:19.252277 [General] [TRACE] query_db_worker_thread_func(): Exit.
+2014-Nov-06 12:42:19.252277 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] WavesCommonCallback callback unregistered.
+2014-Nov-06 12:42:19.252277 [IOM_MGB] [TRACE] [00:1c:d1:00:68:a7] WavesIOMLogger callback unregistered.
+2014-Nov-06 12:42:19.272278 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] WavesCommonCallback callback unregistered.
+2014-Nov-06 12:42:19.272278 [IOM_MGO] [TRACE] [00:1c:d1:00:65:48] WavesIOMLogger callback unregistered.
