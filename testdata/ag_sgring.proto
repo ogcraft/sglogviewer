@@ -1,0 +1,1032 @@
+
+package sgring;
+
+// ------------------------------ Discovery --------------------------
+//option optimize_for = LITE_RUNTIME;
+
+
+enum master_affinity
+{
+    MASTER_AFFINITY_HIGH          = 0;
+    MASTER_AFFINITY_NORMAL        = 1;
+    MASTER_AFFINITY_LOW           = 2;
+    MASTER_AFFINITY_NEVER         = 0xFF;
+}
+
+message sdb_data
+{
+    optional string     uuid            = 1;
+    optional string     mac             = 2;
+    optional string     appname         = 3;
+    optional string     hostname        = 4;
+    optional string     username        = 5;
+    optional string     osname          = 6;
+    optional bool       allow_sharing   = 7;
+}
+
+
+message sgaddress
+{
+    required master_affinity  affinity     = 1 [default = MASTER_AFFINITY_NORMAL];
+    optional sdb_data         data         = 2; 
+}
+
+message sgmessage
+{
+    enum type 
+    {
+        SGRING_BEACON        = 1;
+        SGRING_BEACON_REPLY  = 2;
+        SGRING_BE_MASTER     = 3;
+        SGRING_ERROR         = 0xFF;
+    }
+    
+    required type      id             = 1 [default = SGRING_ERROR];
+    optional sgaddress reply_address = 2;
+    repeated sgaddress address        = 3;
+
+};
+
+ message pb_raw_address {
+        required string uuid = 1;
+        required string mac  = 2;
+    }
+
+ message pb_raw_leg 
+ {
+    required pb_raw_address src = 1;
+    required pb_raw_address dst = 2;
+ }
+
+// ------- DB -------------------------------------------------
+enum db_value_type 
+{
+    BOOL_TYPE            = 1;
+    INT32_TYPE            = 2;
+    INT64_TYPE            = 3;
+    SINT32_TYPE            = 4;
+    SINT64_TYPE            = 5;
+    STRING_TYPE            = 6;
+    DB_USER_INFO_TYPE    = 7;
+    DB_MASTER_INFO_TYPE = 8;
+    DB_STATE_TYPE       = 9;
+    INVENTORY_INFO_TYPE = 10;
+    OWNERSHIP_INFO_TYPE = 11;
+    UNKNOWN_TYPE        = 0xFF;
+}
+
+enum db_action_type
+{
+    UPDATE_ACTION = 1;
+    DELETE_ACTION = 2;
+
+    UNKNOWN_ACTION   = 0xFF;
+}
+
+message db_result_code
+{
+  enum code_type 
+  {
+    OK                               = 0;
+    UNKNOWN_REQUEST_TYPE             = 1;
+    MISSING_UPDATE_INFO              = 2;
+    MISSING_CURRENT_VERSION          = 3;
+    DATA_VERIFY_FAILED_DIFFRENT_UUID = 4;
+    DATA_VERIFY_FAILED_DIFFRENT_ID   = 5;
+    UNKNOWN_ACTION_IN_REQUEST        = 6;
+    MISSING_ITEM_IN_ACTION           = 7;
+    MISSING_VALUE_IN_ITEM            = 8;
+    MISSING_HOST_UUID_IN_UPDATE_INFO = 9;
+    MISSING_KEY_IN_ITEM              = 10;
+    VALUE_MISSING_TYPE               = 11;
+    UNKNOWN_VALUE_TYPE               = 12;
+    VALUE_MISSING_BOOL               = 13;
+    VALUE_MISSING_INT32              = 14;
+    VALUE_MISSING_INT64              = 15;
+    VALUE_MISSING_SINT32             = 16;
+    VALUE_MISSING_SINT64             = 17;
+    VALUE_MISSING_STRING             = 18;
+    VALUE_MISSING_DB_USER_INFO_TYPE   = 19;
+    VALUE_MISSING_DB_MASTER_INFO_TYPE = 20;
+    DATA_VERIFY_FAILED_WRONG_VERSION  = 21;
+    DESTINATION_MAC_INVALID           = 22; 
+    PB_SERIALIZATION_FAILED           = 23; 
+    PB_PARSING_FAILED                 = 24; 
+    NOT_A_MASTER                     = 100;
+    
+    
+    NO_RESULT_CODE                  = 1001;
+    RESULT_CODE_NOT_OK              = 1002;
+    REPLY_HAS_NO_DATA               = 1003;
+    REPLY_HAS_NO_VERSION            = 1004;
+    REPLY_VERSION_HAS_NO_UUID       = 1005;
+    REPLY_VERSION_HAS_NO_NUMBER     = 1006;
+    REPLY_HOST_ITEMS_MISSING_UUID   = 1007;
+    
+    NO_PUBLISH_TYPE                          = 2001;
+    UNKNOWN_PUBLISH_TYPE                     = 2002;
+    PUBLISH_HAS_NO_VERSION                   = 2003;
+    PUBLISH_DIFFRENT_MASTER_UUID             = 2004;
+    PUBLISH_VERSION_BIGGER_THEN_NEXT_VERSION = 2005;
+    
+    RIOM_DATA_NOT_FOUND    = 3001;
+    RIOM_WRONG_ARGUMENTS   = 3002;
+
+    TBD_NOT_IMPLIMENTED   = 0xFFFE;
+    UNKNOWN               = 0xFFFF;
+  };
+  required code_type code = 1 [default = UNKNOWN]; 
+  optional string reason = 2;  
+}
+
+message db_value
+{
+    required db_value_type             type = 1;
+    optional bool                      val_bool = 2;
+    optional uint32                    val_int32 = 3;
+    optional uint64                    val_int64 = 4;
+    optional sint32                    val_sint32 = 5;
+    optional sint64                    val_sint64 = 6;
+    optional string                    val_string = 7;
+    optional pb_user_db_info_type      val_db_user_info = 8;
+    optional pb_master_db_info_type    val_db_master_info = 9;
+    optional pb_db_state               val_db_state = 10;
+    optional pb_inventory_info_type    val_inventory_info = 11;
+    optional pb_ownership_info_type    val_ownership_info = 12;
+}
+
+message db_data_version
+{
+    required string    master_uuid  = 1;
+    required uint32    version      = 2;
+}
+
+message db_item
+{
+    required string         key   = 1;
+    optional db_value       value = 2;
+}
+
+message db_action
+{
+    required db_action_type type   = 1;
+    optional db_item        item   = 2;
+}
+
+message db_host_items
+{
+    required string     uuid   = 1;
+    required bool       is_replicated = 2;
+    repeated db_item    items  = 3;
+}
+
+
+//----------- request ----------
+
+message db_request_update_info
+{
+    required string    host_uuid = 1;
+    repeated db_action actions   = 2;
+}
+
+message db_riom_host_data
+{
+    required string         host_uuid           = 1; 
+    required string         host_mac            = 2; 
+}
+
+message db_request
+{
+    enum db_request_type 
+    {
+        GET_ALL_DATA            = 1;
+        UPDATE_HOST_DATA        = 2;
+        UPDATE_HOST_DATA_VERIFY = 3;
+        UPDATE_ALL_HOST_DATA    = 4;
+        RIOM_GET_ADDRESS        = 5;
+        UPDATE_INVENTORY_DATA   = 6;
+        GET_INVENTORY_DATA      = 7;
+        UPDATE_OWNERSHIP_DATA_VERIFY   = 8;
+        GET_OWNERSHIP_DATA      = 9;
+
+        UNKNOWN = 0xFF;
+    };
+    required db_request_type         request        = 1 [ default = UNKNOWN ];
+    repeated db_request_update_info  update_info    = 2;
+    optional int32                   request_num    = 3 [ default = 0 ];
+    optional db_data_version         verify_version = 4; // for UPDATE_HOST_DATA_VERIFY
+    optional string                  riom_mac       = 5;
+    optional db_data_version         bundles_map_version   = 6; // for UPDATE_ALL_HOST_DATA
+    optional db_data_version         inventory_map_version = 7; // for UPDATE_ALL_HOST_DATA
+    optional db_data_version         ownership_map_version = 8; // for UPDATE_ALL_HOST_DATA
+    
+
+}
+
+// --- request reply ------
+
+message db_all_data
+{
+    required db_data_version version    = 1;
+    repeated db_host_items   host_items = 2;
+}
+
+
+message db_request_reply
+{
+    required db_result_code result_code = 1;
+    optional db_all_data    all_data    = 2;
+    optional int32          request_num = 3  [ default = 0 ];
+    optional db_riom_host_data  riom_host_data = 4;
+}
+
+
+//---------- publish ------------------
+
+message db_publish
+{
+    enum db_publish_type 
+    {
+        DATA_CHANGED        = 1;
+        INVENTORY_CHANGED   = 2;
+        OWNERSHIP_CHANGED   = 3;
+        UPDATE_NODE_LIST    = 4;
+
+        UNKNOWN = 0xFF;
+    };
+    required db_publish_type         publish_type = 1 [ default = UNKNOWN ];
+    optional db_request_update_info  update_info  = 2;
+    optional db_data_version         version      = 3;
+    repeated string                  uuids        = 4;
+}
+
+//------------------------------------------------------------------------------------
+
+message db_dump_section {
+    required int64              timestamp = 1;
+    required int32              bundles_version_num = 2;
+    required int32              inventory_version_num = 3;
+    required int32              ownership_version_num = 4;
+    optional db_all_data        all_data =  5;
+}
+
+
+//---------- control message ------------------
+
+message db_server_control
+{
+    enum type 
+    {
+        STOP             = 1;
+        ENABLE           = 2;
+        DISABLE          = 3;
+        UPDATE_LIST      = 4;
+        
+        UNKNOWN = 0xFF;
+    };
+    required type      msg_type = 1 [ default = UNKNOWN ];
+    repeated string    uuids    = 2;
+    optional string    master_uuid = 3; 
+}
+
+//---------- control message ------------------
+message db_server_info
+{
+    required string master_ip = 1;
+    required uint32 port_rep  = 2;
+    required uint32 port_pub  = 3;
+}
+
+message db_client_control
+{
+    enum type 
+    {
+        STOP             = 1;
+        SUBSCRIBE        = 2;
+        UNSUBSCRIBE      = 3;
+
+        UNKNOWN = 0xFF;
+    };
+    required type           msg_type = 1 [ default = UNKNOWN ];
+    optional db_server_info server_info = 2;
+}
+//---------- control message for main control thread------------------
+enum discovery_state_type
+{
+    DS_UNKWNOWN     = 0;
+    DS_INIT         = 1;
+    DS_NO_MASTER    = 2;
+    DS_RING_NODE    = 3;
+    DS_RING_MASTER  = 4;
+}
+
+message db_server_ports
+{
+    required uint32 port_rep = 1;
+    required uint32 port_pub = 2;
+}
+
+message db_control
+{
+    enum type 
+    {
+        STOP                    = 0;
+        DB_SERVER_CONNECTED     = 1;
+        DB_SERVER_ERROR         = 2;
+        DB_SERVER_CLOSED        = 3;
+        DISCOVERY_ERROR         = 4;
+        DISCOVERY_STOPPED       = 5;
+        DISCOVERY_STATE_CHANGED = 6;
+        DISCOVERY_UPDATE_NODES  = 7;
+        DB_CLIENT_ERROR         = 8;
+        DB_CLIENT_STOPPED       = 9;
+        
+        UNKNOWN = 0xFF;
+    };
+    required type                 msg_type        = 1 [ default = UNKNOWN ];
+    optional db_server_ports      server_ports    = 2;
+    optional discovery_state_type discovery_state = 3;
+    repeated sgaddress            address         = 4;
+}
+
+//----------- User data ----------
+enum sample_rate_type 
+{ 
+    eNonekHz    = 0;
+    e44kHz        = 44100;
+    e48khz        = 48000;
+    e88kHz        = 88200;
+    e96kHz        = 96000;
+    e176kHz        = 176000;
+    e192kHz        = 192000;
+}
+
+enum device_gender_type 
+{
+    NONE_GENDER        = 0;
+    IOBOX_GENDER    = 1;
+    DAW_GENDER        = 2;
+    SGS_GENDER        = 3;
+    HOST_GENDER        = 4;
+    MAX_GENDER        = 5;
+}
+
+enum timestamp_sync_type
+{
+    eNotSynced    = 0;
+    eSynced        = 1;
+    eSyncing    = 2;
+    eMaster        = 3; 
+    eInvalid    = 4;
+}
+
+message pb_connection_type
+{
+    required string    src            = 1;
+    required uint32    src_channel = 2;
+    required string    dst            = 3;
+    required uint32    dst_channel = 4;
+    required uint32    block_size    = 5;
+    required uint32    latency        = 6;
+}
+
+message pb_channel_limit_map_type
+{
+    // key
+    required string                mac                = 1;
+    required sample_rate_type    sample_rate        = 2;
+    // value
+    required uint32                channel_count    = 3;
+}
+
+message pb_bundle_limit_map_type
+{
+    required string mac        = 1;
+    required uint32 handle    = 2;
+}
+
+message pb_uuid_alias_servers_mac_map_type
+{
+    // key
+    required string    uuid    = 1;
+    // value
+    required string mac1        = 2;
+    required string mac2        = 3;
+}
+
+message pb_general_purpose_id_value_type 
+{
+    required uint32 id        = 1;
+    required uint32 value    = 2;
+}
+
+message pb_iobox_node_clock_status_type
+{
+    required bool          valid                                              = 1; 
+    required bool          synced                                             = 2; 
+    required uint32        sample_rate                                        = 3;                        
+    required uint32        timestamp_synced                                   = 4;    
+    required uint32        rounds_left                                        = 5;
+    required uint32        SoE_slave_sync                                     = 6;                
+    required int32         SoE_sample_time_deviation                          = 7;
+    required uint32        sr_sticky_bit                                      = 8;
+    required string        SoE_master                                         = 9;
+    required uint32        major_preferred_clock_source                       = 10;
+    required uint32        minor_preferred_clock_source                       = 11;
+    required uint32        major_active_clock_source                          = 12;
+    required uint32        minor_active_clock_source                          = 13;
+    required uint32        current_ts                                         = 14;
+    required uint32        general_purpose_id_value_count                     = 15;
+    repeated pb_general_purpose_id_value_type    general_purpose_id_value_vec = 16;
+}
+
+message pb_iobox_status_map_type
+{
+    required string                                mac                        = 1;
+    //iobox_node_status_type
+    required pb_iobox_node_clock_status_type    clock_status            = 2;
+    required uint32                                queue_overflow_count    = 3;
+}
+
+/*message pb_mac_gender_map_type
+{
+    required string                mac        = 1;
+    required device_gender_type gender    = 2;
+}*/
+
+message pb_mac_synced_state_map_type
+{
+    required string                    mac                = 1;
+    required timestamp_sync_type    timestamp_sync    = 2;
+}
+
+message pb_mac_iom_chunk_map_type
+{
+    required string                     mac            = 1;
+    required uint32                     chunk_version  = 2 [default = 0] ;
+    required string                     iom_chunk      = 3;
+
+}
+
+message pb_user_db_info_type  
+{
+    required string                     soe_master_mac                  = 1;
+    required string                     host_desc                       = 2;
+    required bool                       is_suspended                    = 3;
+
+    required uint32                     running_configuration_id        = 4;
+    required uint32                     pending_configuration_id        = 5;
+    repeated string                     pending_config_switch_devices   = 6;
+
+    repeated pb_channel_limit_map_type  max_input_channels              = 7;
+    repeated pb_channel_limit_map_type  max_output_channels             = 8;
+    repeated pb_bundle_limit_map_type   max_input_bundles               = 9;
+    repeated pb_bundle_limit_map_type   max_output_bundles              = 10;
+    repeated pb_connection_type         req_connections                 = 11;
+    repeated pb_uuid_alias_servers_mac_map_type uuid_alias_servers_mac_map  = 12;        
+    repeated pb_iobox_status_map_type           iobox_status_map            = 13;  
+    repeated pb_mac_synced_state_map_type       mac_synced_state_map        = 14;
+    repeated pb_mac_iom_chunk_map_type          mac_iom_chunk_map           = 15;
+    required bool                               is_need_to_retry_switch     = 16;
+}
+
+message pb_error_type 
+{
+    required string        msg                = 1;
+}
+
+
+message pb_ep_ch_idxs_map_type
+{
+    required string endpoint = 1;
+    repeated uint32 channels = 2;
+}
+
+message pb_channel_pair_type 
+{
+    required uint32 src_ch = 1;
+    required uint32 dst_ch = 2;
+}
+
+message pb_connection_group_type 
+{
+    required    string                  src               = 1;
+    required    uint32                  src_handle        = 2;
+    required    string                  dst               = 3;
+    required    uint32                  dst_handle        = 4;
+    required    uint32                  block_size        = 5;
+    required    uint32                  latency           = 6;
+    required    bool                    is_syncable_src   = 7;
+    repeated    pb_channel_pair_type    channels          = 8;   
+}
+
+message pb_connections_with_owner_info_type
+{
+    required bool   is_iobox_owner = 1;        
+    repeated    pb_connection_type  connections = 2;
+}
+
+message pb_connections_map_type
+{
+    required    string              uuid = 1;
+    required    pb_connections_with_owner_info_type  connections_with_owner_info = 2;
+}
+
+message pb_conflict_connections_map_type
+{
+    required    string                  uuid = 1;
+    repeated    pb_connections_map_type connections_map = 2;
+}
+
+message pb_compilation_configuration_type
+{
+    required uint32                             conf_id             = 1;
+    repeated pb_connection_group_type           bundles             = 2;
+    repeated pb_error_type                      errors              = 3;
+    repeated pb_ep_ch_idxs_map_type             ep_ch_idxs_diff_map = 4;
+    repeated pb_conflict_connections_map_type   conflicts     = 5;
+}
+
+message pb_was_become_soe_master_pair_type 
+{
+     required   string was_soe_master_mac = 1;
+     required   string become_soe_master_mac = 2;
+}
+
+message pb_master_db_info_type
+{
+    required uint32                                 timestamp_to_switch     = 1;
+    required string                                 sharing_master_uuid     = 2;                                                                   
+    required pb_was_become_soe_master_pair_type     was_become_soe_master   = 3;
+    required pb_compilation_configuration_type      running_configuration   = 4;
+    required pb_compilation_configuration_type      pending_configuration   = 5;
+}
+
+message pb_host_user_db_info_map_type
+{
+    required string                  uuid           = 1;
+    required pb_user_db_info_type    user_db_info   = 2;
+    
+}
+
+message pb_soe_mac_master_do_info_map_type
+{
+    required string                    mac                = 1;
+    required pb_master_db_info_type master_db_info    = 2;
+}
+
+message pb_db_info_type
+{
+    repeated pb_host_user_db_info_map_type        host_user_db_info_map        = 1;
+    repeated pb_soe_mac_master_do_info_map_type soe_mac_master_do_info_map    = 2;
+}
+
+message pb_db_state
+{
+    repeated string node_uuids = 1;
+    optional string master_uuid = 2;
+}
+
+/////////////////////////////  inventory_info_type  section ////////////////////////////////
+
+message pb_apa_description_type
+{
+    required uint32     platform_id = 1;
+	required uint32     firmware = 2;
+	required string     version_string = 3;
+}
+
+message pb_daw_node_description_type
+{
+    required    uint32  input_channel_count = 1;
+    required    uint32  output_channel_count = 2;
+    required    string	host_name = 3;
+}
+
+message pb_iobox_firmware_node_description_type
+{
+    required uint32     boot_major_version = 1;
+    required uint32     boot_minor_version = 2;
+    required uint32     boot_fix_version = 3;
+    required uint32     program_major_version = 4;
+    required uint32     program_minor_version = 5;
+    required uint32     program_fix_version = 6;
+    required uint32     vendor_id = 7;
+    required uint32     device_id = 8;
+    required uint32     flash_block_size = 9;
+}
+
+message pb_iobox_node_description_type
+{
+    required uint32     boot_version_major = 1;
+    required uint32     boot_version_minor = 2;
+    required uint32     boot_version_fix = 3;
+    required uint32     prg_version_major = 4;
+    required uint32     prg_version_minor = 5;
+    required uint32     prg_version_fix = 6;
+    required uint32	    fpga_micro_controller_protocol_version = 7;
+
+    required uint32     sr44100_max_input_channels = 8;
+    required uint32     sr44100_max_output_channels = 9;
+    required uint32     sr48000_max_input_channels = 10;
+    required uint32     sr48000_max_output_channels = 11;
+    required uint32     sr88200_max_input_channels = 12;
+    required uint32     sr88200_max_output_channels = 13;
+    required uint32     sr96000_max_input_channels = 14;
+    required uint32     sr96000_max_output_channels = 15;
+
+    required uint32     vendor_id = 16;
+    required uint32     device_id = 17;
+    required uint32     flags = 18;
+
+    required string     device_description = 19;
+}
+
+message pb_apa_firmware_description_type
+{
+    required uint32     ryolinux_major_version = 1;
+    required uint32     ryolinux_minor_version = 2;
+    required uint32     ag_linux_major_version = 3;
+    required uint32     ag_linux_minor_version = 4;
+    required uint32     ag_linux_fix_version = 5;
+    required uint32     ag_linux_internal_build_version = 6;
+    required string     version_string = 7;
+}
+
+message pb_apa_master_map_type
+{
+    required string                    mac                  = 1;
+    required pb_apa_description_type   apa_description      = 2;
+}
+
+message pb_daw_master_map_type
+{
+    required string                         mac                  = 1;
+    required pb_daw_node_description_type   daw_node_description      = 2;
+}
+
+message pb_iobox_firmware_master_map_type
+{
+    required string                                     mac                  = 1;
+    required pb_iobox_firmware_node_description_type    iobox_firmware_node_description      = 2;
+}
+
+message pb_iobox_master_map_type
+{
+    required string                              mac                  = 1;
+    required pb_iobox_node_description_type      iobox_node_description      = 2; 
+}
+
+message pb_apa_firmware_master_map_type
+{
+    required string                             mac                  = 1;
+    required pb_apa_firmware_description_type   apa_firmware_description      = 2;
+     
+}
+
+message pb_node_id_type {
+    required string     point_address = 1;
+	required int32	    node_number = 2;
+}
+
+message pb_inventory_point_entry_type
+{
+        enum pb_state_type
+        {
+            eNEW = 1;
+            eReady = 2;
+        }
+        required pb_state_type		node_state = 1;
+        required string				device_description_string = 2;
+        repeated int32              subnodes = 3;
+        
+}
+
+message pb_inventory_point_entry_map_type
+{
+    required string                             mac                  = 1;
+    required pb_inventory_point_entry_type      inventory_point_entry      = 2;
+     
+}
+
+message pb_inventory_bad_point_entry_type
+{
+    required int32	header_version = 1;
+    required int32  node_version = 2;
+}
+
+message pb_inventory_bad_point_entry_map_type
+{
+    required pb_node_id_type                     node_id                  = 1;
+    required pb_inventory_bad_point_entry_type   inventory_bad_point_entry      = 2;
+     
+}
+
+message pb_inventory_info_type
+{
+    required string  inv_master_uuid = 1;
+
+    repeated pb_apa_master_map_type              apa_master_map = 2;  
+    repeated pb_daw_master_map_type              daw_master_map = 3;  
+    repeated pb_iobox_firmware_master_map_type   iobox_firmware_master_map = 4;  
+    repeated pb_iobox_master_map_type            iobox_master_map = 5;  
+    repeated pb_apa_firmware_master_map_type     apa_firmware_master_map = 6;  
+    repeated pb_inventory_point_entry_map_type       inventory_valid_node_map = 7;
+    repeated pb_inventory_bad_point_entry_map_type   inventory_bad_node_map = 8;
+}
+
+
+/////////////////////// ownership info sections ////////////////////
+
+message pb_owners_map_type
+{
+    required string             uuid            = 1;
+    required int32              ownership_type  = 2;
+}
+
+message pb_owned_devices_map_type
+{
+    required string                 mac         = 1;
+    repeated pb_owners_map_type     owners_map  = 2;
+}
+      
+message pb_ownership_info_type
+{
+    repeated pb_owned_devices_map_type owned_devices = 1;
+}
+
+// ------------- riom ---------------------------------------------------------
+enum pb_riom_subscription_state_type 
+{
+	riom_subscription_state_subscribing			= 1;
+	riom_subscription_state_subscribed			= 2;
+	riom_subscription_state_unsubscribing		= 3;
+	riom_subscription_state_unsubscribed		= 4;
+	riom_subscription_state_undefined		    = 0XFF;
+}
+
+message pb_riom_clocks_type
+{
+    required uint32 major_clock_source         = 1;
+    required string minor_clock_source_str     = 2;
+}
+
+message pb_riom_supported_clocks_type
+{
+    repeated pb_riom_clocks_type supported_clock    = 1 ;
+    optional pb_riom_clocks_type preferred_clock    = 2 ;
+    repeated uint32 sample_rate                     = 3 ;
+}
+
+message pb_riom_supported_headrooms_type
+{
+    repeated double headrooms = 1 ;
+}
+
+message pb_riom_iom_iobox_status_info_type
+{
+    required int32 valid                           = 1 ;
+    required int32 synced                          = 2 ;
+    required int32 is_soe                          = 3 ;
+    required uint32 sample_rate                    = 4 ;                       
+    required uint64 SoE_master                     = 5 ;
+    required uint32 major_active_clock_source      = 6 ;
+    required uint32 minor_active_clock_source      = 7 ;
+    required uint32 major_preferred_clock_source   = 8 ;
+    required uint32 minor_preferred_clock_source   = 9 ;
+}
+
+message pb_riom_value_type
+{
+    optional int32  val_int32_t                                 = 1 ;
+    optional uint32 val_uint32_t                                = 2 ;
+    optional uint64 val_uint64_t                                = 3 ;
+    optional double val_double                                  = 4 ;
+    optional string val_string_t                                = 5 ;
+    optional pb_riom_supported_clocks_type val_clocks           = 6 ;
+    optional pb_riom_supported_headrooms_type val_headrooms     = 7 ;
+    optional pb_riom_iom_iobox_status_info_type val_status      = 8 ;
+}
+
+enum pb_riom_WavesIOBox_type 
+{
+    riom_cmd_WavesIOBox_set_iobox_down                                  	= 1 ;
+    riom_cmd_WavesIOBox_release                                         	= 2 ;
+    riom_cmd_WavesIOBox_get_max_buffer_size                             	= 3 ;
+    riom_cmd_WavesIOBox_get_mtu                                         	= 4 ;
+    riom_cmd_WavesIOBox_get_number_of_input_channels                    	= 5 ;
+    riom_cmd_WavesIOBox_get_number_of_output_channels                   	= 6 ;
+    riom_cmd_WavesIOBox_reset_to_factory_defaults                       	= 7 ;        
+    riom_cmd_WavesIOBox_get_supported_fpga_tunnel_protocol_version      	= 8 ;
+    riom_cmd_WavesIOBox_get_installed_fpga_tunnel_protocol_version      	= 9 ;  
+    riom_cmd_WavesIOBox_get_vendor_name				                    	= 10;
+    riom_cmd_WavesIOBox_set_common_callback				                	= 11;
+    riom_cmd_WavesIOBox_set_iom_logger_callback				            	= 12;
+    riom_cmd_WavesIOBox_set_iobox_status				                    = 13;
+    riom_cmd_WavesIOBox_set_iobox_up				                        = 14;
+    riom_cmd_WavesIOBox_set_chunk				                        	= 15;
+    riom_cmd_WavesIOBox_get_chunk				                        	= 16;
+    riom_cmd_WavesIOBox_set_mac_address				                    	= 17;    
+    riom_cmd_WavesIOBox_set_firmware_version				                = 18;    
+    riom_cmd_WavesIOBox_set_soe_master_mac				                	= 19;
+    riom_cmd_WavesIOBox_set_clock_source_follow_mode				        = 20;
+    riom_cmd_WavesIOBox_enumerate_supported_clocks				        	= 21; 
+    riom_cmd_WavesIOBox_get_input_channel_latency				        	= 22;
+    riom_cmd_WavesIOBox_get_output_channel_latency				        	= 23;
+    riom_cmd_WavesIOBox_query_functionality				                	= 24;
+    riom_cmd_WavesIOBox_get_resource_path			                		= 25; 
+    riom_cmd_WavesIOBox_get_device_name			                    		= 26;
+    riom_cmd_WavesIOBox_set_iobox_status_ex		                			= 27;
+    riom_cmd_WavesIOBox_get_iom_sg_capabilities		            			= 28;
+    riom_cmd_WavesIOBox_set_sample_rate_and_clocks		        			= 29;
+    riom_cmd_WavesIOBox_get_input_channel_possible_types				    = 30;
+    riom_cmd_WavesIOBox_set_input_channel_type			            		= 31;  
+    riom_cmd_WavesIOBox_get_output_channel_possible_types					= 32;
+    riom_cmd_WavesIOBox_set_output_channel_type			            		= 33;
+    riom_cmd_WavesIOBox_get_input_channel_type			            		= 34;
+    riom_cmd_WavesIOBox_get_output_channel_type			            		= 35;
+    riom_cmd_WavesIOBox_undefined			                        		= 0XFF;
+}
+
+enum pb_riom_WavesIOBoxGain_type 
+{
+    riom_cmd_WavesIOBoxGain_release									= 1 ;
+    riom_cmd_WavesIOBoxGain_is_preamp_gain_supported				= 2 ;
+    riom_cmd_WavesIOBoxGain_get_preamp_gain_min_value				= 3 ;
+    riom_cmd_WavesIOBoxGain_get_preamp_gain_max_value				= 4 ;
+    riom_cmd_WavesIOBoxGain_get_preamp_gain_step					= 5 ;
+    riom_cmd_WavesIOBoxGain_set_preamp_gain							= 6 ;
+    riom_cmd_WavesIOBoxGain_get_preamp_gain							= 7 ;
+    riom_cmd_WavesIOBoxGain_is_phantom_supported					= 8 ;
+    riom_cmd_WavesIOBoxGain_set_phantom								= 9 ;
+    riom_cmd_WavesIOBoxGain_get_phantom								= 10;
+    riom_cmd_WavesIOBoxGain_is_pad_supported						= 11;
+    riom_cmd_WavesIOBoxGain_set_pad									= 12;
+    riom_cmd_WavesIOBoxGain_get_pad									= 13;
+    riom_cmd_WavesIOBoxGain_is_high_pass_filter_supported			= 14;
+    riom_cmd_WavesIOBoxGain_set_high_pass_filter					= 15;
+    riom_cmd_WavesIOBoxGain_get_high_pass_filter					= 16;
+    riom_cmd_WavesIOBoxGain_is_headroom_supported					= 17;
+    riom_cmd_WavesIOBoxGain_is_headroom_discrete					= 18;
+    riom_cmd_WavesIOBoxGain_get_headroom_discrete_steps_count		= 19;
+    riom_cmd_WavesIOBoxGain_enumerate_supported_headrooms			= 20;	 
+    riom_cmd_WavesIOBoxGain_get_headroom_linear_min_value			= 21;
+    riom_cmd_WavesIOBoxGain_get_headroom_linear_max_value			= 22;
+    riom_cmd_WavesIOBoxGain_get_headroom_linear_step				= 23;
+    riom_cmd_WavesIOBoxGain_set_headroom							= 24;
+    riom_cmd_WavesIOBoxGain_get_headroom							= 25;
+    riom_cmd_WavesIOBoxGain_set_gain_changed_callback				= 26;
+    riom_cmd_WavesIOBoxGain_undefined			                	= 0XFF;
+}
+
+enum pb_riom_WavesMicroControllerSupport_type
+{
+    riom_cmd_WavesMicroControllerSupport_release													= 1 ;
+    riom_cmd_WavesMicroControllerSupport_get_installed_iom_micro_controller_protocol_version		= 2 ;						
+    riom_cmd_WavesMicroControllerSupport_get_installed_fpga_micro_controller_protocol_version		= 3 ;							
+    riom_cmd_WavesMicroControllerSupport_get_installed_micro_controller_version						= 4 ;			
+    riom_cmd_WavesMicroControllerSupport_get_supported_iom_micro_controller_protocol_version		= 5 ;
+    riom_cmd_WavesMicroControllerSupport_undefined			                                    	= 0XFF;
+}
+
+enum pb_riom_WavesIOBoxSetDisplayValues_type
+{
+    riom_cmd_WavesIOBoxSetDisplayValues_release								= 1 ;	
+    riom_cmd_WavesIOBoxSetDisplayValues_set_display_name					= 2 ;			
+    riom_cmd_WavesIOBoxSetDisplayValues_open_io_module_control_panel		= 3 ;						
+    riom_cmd_WavesIOBoxSetDisplayValues_close_io_module_control_panel		= 4 ;							
+    riom_cmd_WavesIOBoxSetDisplayValues_get_iom_control_panel_id			= 5 ;	
+    riom_cmd_WavesIOBoxSetDisplayValues_undefined                        	= 0XFF;
+}
+
+enum pb_riom_WavesGainChanged_type 
+{
+	riom_cmd_WavesGainChanged_set_preamp_gain 		= 1 ; 
+	riom_cmd_WavesGainChanged_set_phantom 			= 2 ; 
+	riom_cmd_WavesGainChanged_set_pad 				= 3 ; 
+	riom_cmd_WavesGainChanged_set_high_pass_filter 	= 4 ; 
+	riom_cmd_WavesGainChanged_set_headroom 			= 5 ;
+	riom_cmd_WavesGainChanged_undefined			    = 0XFF;
+}
+
+enum pb_riom_WavesCommonCallback_type
+{
+    riom_cmd_WavesCommonCallback_set_display_name 									= 1 ;
+    riom_cmd_WavesCommonCallback_set_sample_rate_and_clocks 						= 2 ;
+    riom_cmd_WavesCommonCallback_sg_tunnel 										    = 3 ;
+    riom_cmd_WavesCommonCallback_set_id_iobox_led 									= 4 ;
+    riom_cmd_WavesCommonCallback_iom_state_changed 								    = 5 ;
+    riom_cmd_WavesCommonCallback_channel_type_state_changed 						= 6 ;
+    riom_cmd_WavesCommonCallback_user_selection_clock_source_sample_rate_changed 	= 7 ;
+    riom_cmd_WavesCommonCallback_notify_bad_iobox_node 							    = 8 ;
+    riom_cmd_WavesCommonCallback_iom_error 										    = 9 ;
+    riom_cmd_WavesCommonCallback_undefined		                                    = 0XFF;
+}
+
+message pb_riom_interface_type
+{
+    enum id_type
+    {
+        riom_interface_WavesIOBox                           = 1 ;
+        riom_interface_WavesIOBoxGain                       = 2 ;
+        riom_interface_WavesMicroControllerSupport          = 3 ;
+        riom_interface_WavesIOBoxSetDisplayValues           = 4 ;
+        riom_interface_WavesGainChanged                     = 5 ;
+        riom_interface_WavesCommonCallback                  = 6 ;
+
+		riom_interface_Subscription							= 0XFE ;
+        riom_interface_undefined                          = 0XFF ;
+    }
+
+    required id_type interface_id                                                                       = 1 [default = riom_interface_undefined] ;
+    optional pb_riom_WavesIOBox_type interface_WavesIOBox                                               = 2 ;
+    optional pb_riom_WavesIOBoxGain_type interface_WavesIOBoxGain                                       = 3 ;
+    optional pb_riom_WavesMicroControllerSupport_type interface_WavesMicroControllerSupport             = 4 ;
+    optional pb_riom_WavesIOBoxSetDisplayValues_type interface_WavesIOBoxSetDisplayValues               = 5 ;
+    optional pb_riom_WavesGainChanged_type interface_WavesGainChanged                                   = 6 ;
+    optional pb_riom_WavesCommonCallback_type interface_WavesCommonCallback                             = 7 ;
+	optional pb_riom_subscription_state_type interface_Subscription			                            = 0XFE ;
+}
+
+message pb_riom_wavesiobox_msg_type 
+{
+    enum pb_riom_msg_id_type 
+    {
+        riom_msg_id_request        = 1 ;
+        riom_msg_id_response       = 2 ;
+        riom_msg_id_undefined      = 0XFF ;
+    }
+
+    required uint32 version                                 = 1 [default = 0] ;
+    required pb_riom_msg_id_type msg_id                     = 2 [default = riom_msg_id_undefined] ;
+    required pb_riom_interface_type interface_cmd           = 3 ;
+    optional pb_riom_value_type ret                         = 4 ;
+    repeated pb_riom_value_type args                        = 5 ;
+}
+
+// ------------- sg-ring-test ---------------------------------------------------------
+
+message pb_test_request {
+    enum pb_test_request_type {
+        QUIT_DB_TEST = 1;
+        STOP_DB_TEST = 2;
+        RUN_DB_TEST = 3;
+        RUN_RELOCATION_TEST = 4;
+        RUN_DISCOVERY_TEST = 5;
+    }
+    required pb_test_request_type   type = 1;
+    optional string                 client_desc = 2;
+//-------- optional requests ---------------  
+    message pb_quit_db_test {
+    }
+    optional pb_quit_db_test request_quit_db_test = 11;
+
+    message pb_stop_db_test {
+    }
+    optional pb_stop_db_test request_stop_db_test = 12;
+
+    message pb_run_db_test {
+        required master_affinity    affinity     = 1 [default = MASTER_AFFINITY_NORMAL];
+        required string             uuid         = 2;
+        required string             mac          = 3;
+        optional int32              do_updates   = 4;
+        optional int32              do_queries   = 5;
+        optional int32              data_size    = 6;
+    }
+    optional pb_run_db_test request_run_db_test = 21;
+
+    message pb_run_relocation_test {
+        required string key = 1;
+        required string value = 2;
+    }
+    optional pb_run_relocation_test request_run_relocation_test = 22;
+
+    message pb_run_discovery_test {
+        required string key = 1;
+    }
+    optional pb_run_discovery_test request_run_discovery_test = 23;
+
+   
+    message pb_run_multifarme_test {
+        required master_affinity    affinity     = 1 [default = MASTER_AFFINITY_NORMAL];
+        required string             uuid         = 2;
+        required string             mac          = 3;
+        optional int32              do_tries     = 4;
+    }
+    optional pb_run_multifarme_test request_run_multiframe_test = 24;
+    
+    message pb_run_raw_socket_test {
+        required string             uuid        = 1;
+        required string             mac         = 2;
+        repeated pb_raw_leg         test_legs   = 3;
+        required int32              do_tries    = 4;
+   }
+
+    optional pb_run_raw_socket_test request_run_raw_socket_test = 25;
+
+}
+
+message pb_test_response {
+    required db_result_code     result_code     = 1;
+    optional string             client_desc     = 2;
+}
