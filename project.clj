@@ -10,9 +10,11 @@
                  [hiccup "1.0.5"]
                  [com.cemerick/friend "0.2.1"]
                  [clj-http "1.0.1"]
+                 [org.flatland/protobuf "0.7.1"]
                  [org.apache.httpcomponents/httpclient "4.3.5"]]
 
-  :plugins [[lein-ring "0.8.13"]]
+  :plugins [[lein-ring "0.8.13"]
+            [lein-protobuf "0.4.1"]]
   :ring {:handler sglogviewer.core.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
