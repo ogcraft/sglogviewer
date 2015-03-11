@@ -18,20 +18,23 @@
 
 (defn parse-date [str]
   (let [d-str (subs str 0 27)]
-    (time-format/parse-local sglog-data-formatter d-str)))
+    (try
+      (time-format/parse-local sglog-data-formatter d-str)
+      (catch Exception e (prn e)))))
 
 (defn parse-log-str [str]
-  (let [d (parse-date str)]
+  (if-let [d (parse-date str)]
     {:date d
-     :str (subs str 28)}))
+     :str (subs str 28)}
+    nil))
 
 (defn add-to-log-recs [str]
-  (let [r (parse-log-str str)]
+  (if-let [r (parse-log-str str)]
     (swap! log-recs assoc (:date r) r)))
 
 (defn read-file [fname]
   (with-open [rdr (clojure.java.io/reader fname)]
-    (doall (map add-to-log-recs (line-seq rdr)))))
+    (map prn (line-seq rdr))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
